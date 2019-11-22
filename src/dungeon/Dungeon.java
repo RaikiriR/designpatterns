@@ -27,7 +27,7 @@ public class Dungeon {
 				hero.battleChoices(monster, kb);
 				if (monster.isAlive())
 				    monster.attack(hero);
-				
+				kb.nextLine();
 				System.out.println("-->q to quit, anything else to continue: ");
 				pause = kb.next();
 				if(pause.equalsIgnoreCase("q"))
