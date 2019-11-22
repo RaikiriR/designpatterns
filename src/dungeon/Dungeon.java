@@ -20,7 +20,6 @@ public class Dungeon {
 
 	private static void battle(DungeonCharacter hero, DungeonCharacter monster, Scanner kb) {
 			String pause = "p";
-			String temp = "";
 			System.out.println(hero.getName() + " battles " + monster.getName());
 			System.out.println("---------------------------------------------");
 			
