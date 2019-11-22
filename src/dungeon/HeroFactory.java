@@ -14,6 +14,7 @@ public class HeroFactory {
 		if (kb.hasNextInt())
 			choice = kb.nextInt();
 		if (!(choice > 0 && choice < 4))
+			System.out.println("Invalid choice given, auto creating a warrior");
 			choice = 1;
 			switch (choice) {
 		case 1:
@@ -28,5 +29,6 @@ public class HeroFactory {
 		}
 		return hero;
 	}
+	
 	
 }
