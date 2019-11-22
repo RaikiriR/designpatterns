@@ -20,7 +20,11 @@ public class Dungeon {
 
 	private static void battle(DungeonCharacter hero, DungeonCharacter monster, Scanner kb) {
 			String pause = "p";
+<<<<<<< HEAD
 			String temp = "";
+=======
+			String temp = "temp";
+>>>>>>> Justin
 			System.out.println(hero.getName() + " battles " + monster.getName());
 			System.out.println("---------------------------------------------");
 			
@@ -28,11 +32,15 @@ public class Dungeon {
 				hero.battleChoices(monster, kb);
 				if (monster.isAlive())
 				    monster.attack(hero);
+<<<<<<< HEAD
 				if(pause.equalsIgnoreCase("q"))
 				{
 					pause = kb.next();
 				}
 				    		
+=======
+			
+>>>>>>> Justin
 				System.out.println("-->q to quit, anything else to continue: ");
 				pause = kb.next();
 				if(pause.equalsIgnoreCase("q"))
