@@ -13,6 +13,7 @@ public abstract class Hero extends DungeonCharacter {
 	
 	public void readName(Scanner kb) {
 		System.out.print("Enter character name: ");
+		kb.nextLine();
 		name = kb.next();
 	}
 	
