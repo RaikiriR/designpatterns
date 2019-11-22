@@ -13,12 +13,9 @@ public class HeroFactory {
 							"3. Thief");
 		if (kb.hasNextInt())
 			choice = kb.nextInt();
-		while (!(choice > 0 && choice < 4))
-		{
-			System.out.println("Wrong choice");
-			if (kb.hasNextInt())
-				choice = kb.nextInt();
-		}
+		if (!(choice > 0 && choice < 4))
+			System.out.println("Invalid choice given, auto creating a warrior");
+			choice = 1;
 			switch (choice) {
 		case 1:
 			hero = new Warrior();
@@ -32,5 +29,6 @@ public class HeroFactory {
 		}
 		return hero;
 	}
+	
 	
 }
