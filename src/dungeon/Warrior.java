@@ -32,7 +32,7 @@ public class Warrior extends Hero {
 		    System.out.println("2. Crushing Blow on Opponent");
 		    System.out.print("Choose an option: ");
 		    
-		    Dungeon.kbchoose(kb,2);
+		    Dungeon.kbChoose(kb,2);
 		    switch (choice) 
 		    {
 			    case 1: 

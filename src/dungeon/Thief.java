@@ -29,7 +29,7 @@ public class Thief extends Hero {
 		    System.out.println("2. Surprise Attack");
 		    System.out.print("Choose an option: ");
 		    int choice = 1;
-		    Dungeon.kbchoose(kb,2);
+		    Dungeon.kbChoose(kb,2);
 		    switch (choice) {
 			    case 1: 
 			    	attack(opponent);

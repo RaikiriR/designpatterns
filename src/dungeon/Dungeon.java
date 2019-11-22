@@ -10,8 +10,8 @@ public class Dungeon {
 		Scanner kb = new Scanner(System.in);
 		do {
 			int choice = 3;
-			printmenu();
-			choice = kbchoose(kb,3);
+			printMenu();
+			choice = kbChoose(kb,3);
 			hero = hFactory.createHero(convertChoice(choice));
 			((Hero)hero).readName(kb);
 			System.out.println();
@@ -60,7 +60,7 @@ public class Dungeon {
 	}
 
 	
-	public static int kbchoose(Scanner kb, int highchoice)
+	public static int kbChoose(Scanner kb, int highchoice)
 	{
 		int choice = 0;
 		while((choice < 1 || choice > highchoice))
@@ -84,7 +84,7 @@ public class Dungeon {
 		return choice;
 	}
 
-	private static void printmenu()
+	private static void printMenu()
 	{
 		System.out.println("Choose a hero: \n" + "1. Warrior \n" + "2. Sorceress \n" + "3. Thief");
 	}
