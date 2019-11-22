@@ -1,5 +1,4 @@
 # designpatterns
 Dungeon Refactor
 -
-changes - to testbranch
--
+1. Factory 
