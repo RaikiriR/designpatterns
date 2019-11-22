@@ -28,7 +28,6 @@ public class Warrior extends Hero {
 		super.battleChoices(opponent, kb);
 		do {
 		    int choice = 1;
-		    boolean chosen = false;
 			System.out.println("1. Attack Opponent");
 		    System.out.println("2. Crushing Blow on Opponent");
 		    System.out.print("Choose an option: ");
