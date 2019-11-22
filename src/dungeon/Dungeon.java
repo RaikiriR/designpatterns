@@ -9,7 +9,10 @@ public class Dungeon {
 		DungeonCharacter hero, monster;
 		Scanner kb = new Scanner(System.in);
 		do {
-			hero = hFactory.createHero(kb);
+			int choice = 3;
+			printmenu();
+			choice = kbchoose(kb,3);
+			hero = hFactory.createHero(convertChoice(choice));
 			((Hero)hero).readName(kb);
 			System.out.println();
 			monster = mFactory.createMonster();
@@ -56,5 +59,49 @@ public class Dungeon {
 		return input.equalsIgnoreCase("y");
 	}
 
+	
+	public static int kbchoose(Scanner kb, int highchoice)
+	{
+		int choice = 0;
+		while((choice < 1 || choice > highchoice))
+		{
+			if(kb.hasNextInt())
+			{
+				choice = kb.nextInt();
+				if((choice > highchoice || choice < 1))
+				{
+					System.out.println("Error Try Again");
+					kb.nextLine();
+				}
+			}
+			else
+			{
+				System.out.println("Error Try Again");
+				kb.next();
+			}
 
+		}
+		return choice;
+	}
+
+	private static void printmenu()
+	{
+		System.out.println("Choose a hero: \n" + "1. Warrior \n" + "2. Sorceress \n" + "3. Thief");
+	}
+	private static String convertChoice(int choice)
+	{
+		if(choice == 1)
+		{
+			return "warrior";
+		}
+		if(choice == 2)
+		{
+			return "sorceress";
+		}
+		if(choice == 3)
+		{
+			return "thief";
+		}
+		return null;
+	}
 }

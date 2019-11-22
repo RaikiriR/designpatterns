@@ -29,7 +29,7 @@ public class Thief extends Hero {
 		    System.out.println("2. Surprise Attack");
 		    System.out.print("Choose an option: ");
 		    int choice = 1;
-		    kbchoose(kb,1);
+		    Dungeon.kbchoose(kb,2);
 		    switch (choice) {
 			    case 1: 
 			    	attack(opponent);
@@ -45,22 +45,4 @@ public class Thief extends Hero {
 		} while (turns > 0 && opponent.getHealth() > 0);
     }
 
-    public int kbchoose(Scanner kb, int choice)
-	{
-		if(kb.hasNextInt())
-		{
-			choice = kb.nextInt();
-			if(choice < 0 || choice > 3)
-			{
-				System.out.println("Invalid choice given, auto choosing 1");
-				choice = 1;
-			}
-			return choice;
-		}
-		else
-		{
-			System.out.println("Invalid choice given, auto choosing 1");
-			return choice;
-		}
-	}
 }
