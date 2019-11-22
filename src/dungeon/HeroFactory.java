@@ -13,8 +13,12 @@ public class HeroFactory {
 							"3. Thief");
 		if (kb.hasNextInt())
 			choice = kb.nextInt();
-		if (!(choice > 0 && choice < 4))
-			choice = 1;
+		while (!(choice > 0 && choice < 4))
+		{
+			System.out.println("Wrong choice");
+			if (kb.hasNextInt())
+				choice = kb.nextInt();
+		}
 			switch (choice) {
 		case 1:
 			hero = new Warrior();
