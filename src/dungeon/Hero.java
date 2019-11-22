@@ -3,8 +3,8 @@ package dungeon;
 import java.util.Scanner;
 
 public abstract class Hero extends DungeonCharacter {
-	double blockChance;
-	int turns;
+	protected double blockChance;
+	protected int turns;
 	
 	public Hero(String name, int health, int speed, int damageMin, int damageMax, double hitChance, double blockChance) {
 		super(name, health, speed, damageMin, damageMax, hitChance);
