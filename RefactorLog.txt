@@ -94,3 +94,5 @@ Dungeon Refactor - Justin Ching, Ron Robinson, Cooper Wutzke
 		protected double chanceToHit;
 		protected int damageMin, damageMax;
 		
+10. Code Refactor - Added Exception Handling
+	Reasoning: Added exception handling so that the code doesnt break if invalid inputs are given.
