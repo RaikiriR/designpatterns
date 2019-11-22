@@ -28,14 +28,12 @@ public class Warrior extends Hero {
 		super.battleChoices(opponent, kb);
 		do {
 		    int choice = 1;
+		    boolean chosen = false;
 			System.out.println("1. Attack Opponent");
 		    System.out.println("2. Crushing Blow on Opponent");
 		    System.out.print("Choose an option: ");
-		    if (kb.hasNextInt())
-				choice = kb.nextInt();
-			if (!(choice > 0 && choice < 3))
-				choice = 1;
-				System.out.println("Invalid choice given, auto choosing 1.");
+		    
+			kbchoose(kb,1);
 		    switch (choice) 
 		    {
 			    case 1: 
@@ -56,4 +54,22 @@ public class Warrior extends Hero {
 		} while (turns > 0 && opponent.getHealth() > 0);
     }
 
+    public int kbchoose(Scanner kb, int choice)
+	{
+		if(kb.hasNextInt())
+		{
+			choice = kb.nextInt();
+			if(choice < 0 || choice > 3)
+			{
+				System.out.println("Invalid choice given, auto choosing 1");
+				choice = 1;
+			}
+			return choice;
+		}
+		else
+		{
+			System.out.println("Invalid choice given, auto choosing 1");
+			return choice;
+		}
+	}
 }

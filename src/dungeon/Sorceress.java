@@ -28,8 +28,20 @@ public class Sorceress extends Hero {
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Increase Hit Points");
 		    System.out.print("Choose an option: ");
+		    boolean chosen = false;
+		    int choice = 0;
+		    if (kb.hasNextInt())
+		    {
+				choice = kb.nextInt();
+				chosen = true;
+		    }
 
-		    switch (kb.nextInt()) {
+			if (chosen == false)
+			{
+				System.out.println("Invalid choice given, auto choosing 1.");
+				choice = 1;
+			}
+		    switch (choice) {
 			    case 1: 
 			    	attack(opponent);
 			        break;
