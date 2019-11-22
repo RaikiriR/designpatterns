@@ -28,10 +28,6 @@ public class Thief extends Hero {
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Surprise Attack");
 		    System.out.print("Choose an option: ");
-<<<<<<< HEAD
-
-=======
->>>>>>> Justin
 		    int choice = 1;
 		    kbchoose(kb,1);
 		    switch (choice) {
@@ -48,25 +44,7 @@ public class Thief extends Hero {
 			    System.out.println("Number of turns remaining is: " + turns);
 		} while (turns > 0 && opponent.getHealth() > 0);
     }
-    public int kbchoose(Scanner kb, int choice)
-	{
-		if(kb.hasNextInt())
-		{
-			choice = kb.nextInt();
-			if(choice < 0 || choice > 3)
-			{
-				System.out.println("Invalid choice given, auto choosing 1");
-				choice = 1;
-			}
-			return choice;
-		}
-		else
-		{
-			System.out.println("Invalid choice given, auto choosing 1");
-			return choice;
-		}
-	}
-    
+
     public int kbchoose(Scanner kb, int choice)
 	{
 		if(kb.hasNextInt())
