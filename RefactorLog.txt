@@ -86,3 +86,11 @@ Dungeon Refactor - Justin Ching, Ron Robinson, Cooper Wutzke
 		public boolean defend() {
 			return Math.random() <= chanceToBlock;
 		}
+
+9. Code Refactor - Changed some fields to private.
+	Reasoning: Unnecessary for outside classes to access certain fields.
+	Code Example:
+		protected int attackSpeed;
+		protected double chanceToHit;
+		protected int damageMin, damageMax;
+		
