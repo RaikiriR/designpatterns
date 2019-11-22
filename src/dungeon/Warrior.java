@@ -47,7 +47,6 @@ public class Warrior extends Hero {
 			    default:
 			        System.out.println("Invalid choice!");
 		    }
-		    kb.nextLine();
 			turns--;
 			if (turns > 0)
 			    System.out.println("Number of turns remaining is: " + turns);
