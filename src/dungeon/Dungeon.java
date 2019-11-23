@@ -11,7 +11,7 @@ public class Dungeon {
 		do {
 			int choice = 3;
 			printMenu();
-			choice = kbChoose(kb,3);
+			choice = Keyboard.kbChoose(kb,3);
 			hero = hFactory.createHero(convertChoice(choice));
 			((Hero)hero).readName(kb);
 			System.out.println();
@@ -30,15 +30,13 @@ public class Dungeon {
 				hero.battleChoices(monster, kb);
 				if (monster.isAlive())
 				    monster.attack(hero);
-				if(pause.equalsIgnoreCase("q"))
-				{
+				if(pause.equalsIgnoreCase("q")) {
 					pause = kb.next();
 				}
 				    		
 				System.out.println("-->q to quit, anything else to continue: ");
 				pause = kb.next();
-				if(pause.equalsIgnoreCase("q"))
-				{
+				if(pause.equalsIgnoreCase("q")) {
 					System.out.println("Quitters never win ;-)");
 					System.exit(0);
 				}
@@ -59,49 +57,24 @@ public class Dungeon {
 		return input.equalsIgnoreCase("y");
 	}
 
+	private static void printMenu() {
+		System.out.println("Choose a hero: \n" + 
+							"1. Warrior \n" + 
+							"2. Sorceress \n" + 
+							"3. Thief");
+	}
 	
-	public static int kbChoose(Scanner kb, int highchoice)
-	{
-		int choice = 0;
-		while((choice < 1 || choice > highchoice))
-		{
-			if(kb.hasNextInt())
-			{
-				choice = kb.nextInt();
-				if((choice > highchoice || choice < 1))
-				{
-					System.out.println("Error Try Again");
-					kb.nextLine();
-				}
-			}
-			else
-			{
-				System.out.println("Error Try Again");
-				kb.next();
-			}
-
-		}
-		return choice;
-	}
-
-	private static void printMenu()
-	{
-		System.out.println("Choose a hero: \n" + "1. Warrior \n" + "2. Sorceress \n" + "3. Thief");
-	}
-	private static String convertChoice(int choice)
-	{
-		if(choice == 1)
-		{
+	private static String convertChoice(int choice) {
+		switch (choice) {
+		case 1:
 			return "warrior";
-		}
-		if(choice == 2)
-		{
+		case 2:
 			return "sorceress";
-		}
-		if(choice == 3)
-		{
+		case 3:
+			return "thief";
+		default:
+			System.out.println("Invalid Choice, returning thief.");
 			return "thief";
 		}
-		return null;
 	}
 }
