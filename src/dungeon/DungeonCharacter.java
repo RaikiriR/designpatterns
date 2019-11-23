@@ -51,8 +51,9 @@ public abstract class DungeonCharacter {
 	private void reportChange(String type, int amount) {
 		switch (type) {
 		case "heal":
-			System.out.println(name + " healed for " + amount + " points.\n" 
+			System.out.println(name + " healed for [" + amount + "] points.\n" 
 								+ "Total hit points remaining are: " + health);
+			System.out.println();
 			break;
 		case "damage":
 			System.out.println(name + " hit for <" + amount + "> points of damage.");

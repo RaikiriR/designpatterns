@@ -14,11 +14,10 @@ public class Sorceress extends Hero {
 	public void healingWord() {
 		int healAmount = (int)(Math.random() * (maxHeal - minHeal + 1)) + minHeal;
 		heal(healAmount);
-		System.out.println();
     }
 
 	public void attack(DungeonCharacter opponent) {
-		System.out.println(name + " casts fireball at " + opponent.getName() + ":");
+		System.out.println(name + " casts Fireball at " + opponent.getName() + ":");
 		super.attack(opponent);
 	}
 
@@ -28,17 +27,17 @@ public class Sorceress extends Hero {
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Increase Hit Points");
 		    System.out.print("Choose an option: ");
-		    int choice = 1;
-		    Dungeon.kbChoose(kb,2);
-		    switch (choice) {
+		    
+		    switch (Keyboard.kbChoose(kb,2)) {
 			    case 1: 
+			    	System.out.println();
 			    	attack(opponent);
 			        break;
 			    case 2: 
+			    	System.out.println();
 			    	healingWord();
 			        break;
 		    }
-		    kb.nextLine();
 			turns --;
 		    if (turns > 0)
 			    System.out.println("Number of turns remaining is: " + turns);
