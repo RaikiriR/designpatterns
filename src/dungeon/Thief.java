@@ -14,12 +14,20 @@ public class Thief extends Hero {
 			System.out.println("Surprise attack was successful!\n" + 
 								name + " gets an additional turn.");
 			turns ++;
+			System.out.println();
 			attack(opponent);
 		} else if (surprise >= .8) {
 			System.out.println("Uh oh! " + opponent.getName() + " saw you and blocked your attack!");
 			System.out.println();
-		} else
+		} else {
+			System.out.println("Surprise attack failed.");
 		    attack(opponent);
+		}
+	}
+	
+	public void attack(DungeonCharacter opponent) {
+		System.out.println(name + " throws a dagger at " + opponent.getName() + ":");
+		super.attack(opponent);
 	}
 
     public void battleChoices(DungeonCharacter opponent, Scanner kb) {
@@ -28,17 +36,17 @@ public class Thief extends Hero {
 		    System.out.println("1. Attack Opponent");
 		    System.out.println("2. Surprise Attack");
 		    System.out.print("Choose an option: ");
-		    int choice = 1;
-		    Dungeon.kbChoose(kb,2);
-		    switch (choice) {
+		    
+		    switch (Keyboard.kbChoose(kb,2)) {
 			    case 1: 
+			    	System.out.println();
 			    	attack(opponent);
 			        break;
 			    case 2: 
+			    	System.out.println();
 			    	surpriseAttack(opponent);
 			        break;
 		    }
-		    kb.nextLine();
 			turns --;
 		    if (turns > 0)
 			    System.out.println("Number of turns remaining is: " + turns);

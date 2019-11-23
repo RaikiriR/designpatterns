@@ -1,7 +1,5 @@
 package dungeon;
 
-import java.util.Scanner;
-
 public class HeroFactory {
 	
 	public Hero createHero(String type) {

@@ -18,8 +18,10 @@ public abstract class Hero extends DungeonCharacter {
 	}
 	
 	public void damage(int damageAmount) {
-		if (Math.random() <= blockChance)
+		if (Math.random() <= blockChance) {
 			System.out.println(name + " BLOCKED the attack!");
+			System.out.println();
+		}
 		else
 			super.damage(damageAmount);
 	}

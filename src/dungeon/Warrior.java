@@ -27,13 +27,11 @@ public class Warrior extends Hero {
     public void battleChoices(DungeonCharacter opponent, Scanner kb) {
 		super.battleChoices(opponent, kb);
 		do {
-		    int choice = 1;
 			System.out.println("1. Attack Opponent");
 		    System.out.println("2. Crushing Blow on Opponent");
 		    System.out.print("Choose an option: ");
 		    
-		    Dungeon.kbChoose(kb,2);
-		    switch (choice) 
+		    switch (Keyboard.kbChoose(kb,2)) 
 		    {
 			    case 1: 
 			    	System.out.println();
@@ -46,7 +44,6 @@ public class Warrior extends Hero {
 			    default:
 			        System.out.println("Invalid choice!");
 		    }
-		    kb.nextLine();
 			turns--;
 			if (turns > 0)
 			    System.out.println("Number of turns remaining is: " + turns);
