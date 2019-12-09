@@ -7,7 +7,6 @@ public class Dungeon {
 		HeroFactory hFactory = new HeroFactory();
 		MonsterFactory mFactory = new MonsterFactory();
 		DungeonCharacter hero, monster;
-		MazeMaker theMaze = new MazeMaker();
 		//DEVMODE
 		devMode();
 		Scanner kb = new Scanner(System.in);
@@ -30,8 +29,15 @@ public class Dungeon {
 	public static void devMode()
 	{
 		MazeMaker theMaze = new MazeMaker();
-		theMaze.rollForHero();
-		System.out.close();
+		DungeonCharacter hero;
+		HeroFactory hFactory = new HeroFactory();
+		hero = hFactory.createHero(convertChoice(1));
+		theMaze.spawnHero(hero);
+		hero.pingloc();
+		System.out.println("");
+		System.out.println("Checking maze");
+		theMaze.printDungeon();
+		System.exit(0);
 	}
 	
 	private static void battle(DungeonCharacter hero, DungeonCharacter monster, Scanner kb) {

@@ -12,8 +12,8 @@ public class MazeMaker {
 	public MazeMaker()
 	{
 		setMaze(getSpecs(1),getSpecs(2));
-		//spawnPillars(4);
-		//setExit();
+		spawnPillars(4);
+		setExit();
 		//spawnHero(hero);
 		
 	}
@@ -45,7 +45,7 @@ public class MazeMaker {
 		{
 			for(int c=0; c<col;c++)
 			{
-				maze[r][c]=new Maze(r,c,"");
+				maze[r][c]=new Maze(r,c);
 			}
 		}
 		return maze;
@@ -53,17 +53,31 @@ public class MazeMaker {
 	
 	public void spawnPillars(int pillars)
 	{
-		maze[3][0].spawnInstance("Pillar");
+		maze[2][2].spawnInstance("Pillar");
+		maze[2][3].spawnInstance("Pillar");
+		maze[2][4].spawnInstance("Pillar");
+		maze[2][1].spawnInstance("Pillar");
 	}
 	
 	private void setExit()
 	{
-		maze[2][0].spawnInstance("Exit");
+		maze[4][4].spawnInstance("Exit");
 	}
 	
-	private void spawnHero(Hero hero)
+	public void spawnHero(DungeonCharacter hero)
 	{
-		rollForHero();
+		boolean passtest = false;
+		int row = 0;
+		int col = 0;
+		/*while(passtest == false)
+		{
+			row = rollFor(0,4);
+			col = rollFor(0,4);
+			passtest = checkRoom(row,col);
+		}
+		*/
+		hero.setLoc(row, col);
+		System.out.print("Hero set, pinging for location ");
 	}
 	
 	public void setHero(Hero hero)
@@ -76,19 +90,59 @@ public class MazeMaker {
 		return hero;
 	}
 	
-	public void rollForHero()
+	public int rollFor(int min, int max)
 	{
-		int row = randomRoller(0,5);
-		int col = randomRoller(0,5);
-		System.out.println(row);
-		System.out.println(col);
-
+			int result = randomRoller(min,max);
+			return result;
+		
 	}
 	
-	private int randomRoller(int min, int max)
+	public boolean checkRoom(int row, int col)
+	{
+		if(maze[row][col].getFill() == false)
+		{
+			return true;
+		}
+		return false;
+	}
+	
+	public int randomRoller(int min, int max)
 	{
 		Random rand = new Random();
 		int randomNum = rand.nextInt((max - min)+1) + min;
 		return randomNum;
 	}
+	
+	public void checkMaze(MazeMaker maze)
+	{
+		Maze[][] mazer = this.maze;
+		int count = 0;
+		for(int r=0; r <this.row; r++)
+		{
+			for(int c=0; c<this.col;c++)
+			{
+				mazer[r][c].pingloc();
+				System.out.println(mazer[r][c].getItem());
+				count++;
+			}
+		}
+		System.out.println("Total Count of rooms - " + count);
+	}
+	
+	public void printDungeon()
+    {
+		Maze[][] mazer = this.maze;
+		int count = 0;
+        	for(int xr=0; xr < this.row; xr++)
+    		{
+    			System.out.println("---------------");
+        		for(int xc=0; xc< this.col;xc++)
+    			{
+    				System.out.print(maze[xr][xc].toString());
+    				count++;
+    			}
+    			System.out.println("");
+    		}
+        	System.out.println("---------------");
+    }
 }
