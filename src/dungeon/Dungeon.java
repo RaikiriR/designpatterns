@@ -8,7 +8,7 @@ public class Dungeon {
 		MonsterFactory mFactory = new MonsterFactory();
 		DungeonCharacter hero, monster;
 		//DEVMODE
-		devMode();
+		//devMode();
 		Scanner kb = new Scanner(System.in);
 		do {
 			int choice = 3;
@@ -70,7 +70,7 @@ public class Dungeon {
 	{
 		if(i == 3)
 		{
-			
+			System.exit(10);
 		}
 		
 	}
