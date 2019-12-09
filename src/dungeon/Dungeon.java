@@ -32,14 +32,16 @@ public class Dungeon {
 
 	public static void mainMenu(DungeonCharacter hero, Scanner kb,MazeMaker theMaze) 
 	{
-		mainStage(hero);
-		int mchoice = mainChoice(hero,kb);
-		if(mchoice == 1)
+		while(true)
 		{
-			moveMenu(theMaze,hero,kb);
+			mainStage(hero);
+			int mchoice = mainChoice(hero,kb);
+			if(mchoice == 1)
+			{
+				moveMenu(theMaze,hero,kb);
+			}
+			//battle(hero, monster, kb);
 		}
-		//battle(hero, monster, kb);
-		
 	}
 
 	private static void moveMenu(MazeMaker maze, DungeonCharacter hero, Scanner kb) 
@@ -62,6 +64,37 @@ public class Dungeon {
 			}
 		}
 		while (!validMove(maze,choice,hero));
+		
+		confirmChoice(hero,choice);
+		
+	}
+
+	private static void confirmChoice(DungeonCharacter hero, int choice) 
+	{
+		int[] newloc = hero.getLoc();
+		int row = newloc[0];
+		int col = newloc[1];
+		
+		if(choice == 1)
+		{
+			row = row -1;
+			hero.setLoc(row, col);
+		}
+		if(choice == 2)
+		{
+			row = row + 1;
+			hero.setLoc(row, col);
+		}
+		if(choice == 3)
+		{
+			col = col -1;
+			hero.setLoc(row, col);
+		}
+		if(choice == 4)
+		{
+			col = col + 1;
+			hero.setLoc(row, col);
+		}
 		
 	}
 
@@ -101,7 +134,7 @@ public class Dungeon {
 				return true;
 			}
 		}
-		if(choice == 1)
+		if(choice == 4)
 		{
 			if(location[1] + 1 > 4)
 			{
