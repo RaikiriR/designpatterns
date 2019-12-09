@@ -5,16 +5,16 @@ import java.util.Random;
 public class MazeMaker {
 
 	private Maze[][] maze;
-	private Hero hero;
+	private DungeonCharacter hero;
 	private int row = 5;
 	private int col = 5;
 	
-	public MazeMaker()
+	public MazeMaker(DungeonCharacter hero)
 	{
 		setMaze(getSpecs(1),getSpecs(2));
 		spawnPillars(4);
 		setExit();
-		//spawnHero(hero);
+		spawnHero(hero,maze);
 		
 	}
 	
@@ -64,10 +64,10 @@ public class MazeMaker {
 		maze[4][4].spawnInstance("Exit");
 	}
 	
-	public void spawnHero(DungeonCharacter hero)
+	public void spawnHero(DungeonCharacter hero,Maze[][] maze)
 	{
 		boolean passtest = false;
-		int row = 0;
+		int row = 1;
 		int col = 0;
 		/*while(passtest == false)
 		{
@@ -76,6 +76,7 @@ public class MazeMaker {
 			passtest = checkRoom(row,col);
 		}
 		*/
+		maze[row][col].spawnInstance("Hero");
 		hero.setLoc(row, col);
 		System.out.print("Hero set, pinging for location ");
 	}
@@ -132,17 +133,30 @@ public class MazeMaker {
 	public void printDungeon()
     {
 		Maze[][] mazer = this.maze;
-		int count = 0;
-        	for(int xr=0; xr < this.row; xr++)
-    		{
-    			System.out.println("---------------");
-        		for(int xc=0; xc< this.col;xc++)
-    			{
-    				System.out.print(maze[xr][xc].toString());
-    				count++;
-    			}
-    			System.out.println("");
-    		}
-        	System.out.println("---------------");
+		for(int r=0;r<5;r++)
+        {
+            String[] rows=new String[3];
+            rows[0]="";
+            rows[1]="";
+            rows[2]="";
+            
+            
+            //Creating 5 modules of 3 line rooms
+            for(int c=0;c<5;c++)
+            {
+                  String[] row=mazer[r][c].toString().split("@");
+                  rows[0]+=row[0];
+                  rows[1]+=row[1];
+                  rows[2]+=row[2];
+            }
+            
+            //Printing 3 lines = 1 row
+            for(int l=0;l<3;l++)
+            {
+                System.out.println(rows[l]);
+            }
+        }
+		
+		
     }
 }

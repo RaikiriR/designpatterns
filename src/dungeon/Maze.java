@@ -5,7 +5,7 @@ import java.util.Random;
 public class Maze {
 
 	private String item;
-	private int itemcount;
+	private int itemcount = 0;
 	private int row;
 	private int col;
 	private boolean filled;
@@ -19,17 +19,9 @@ public class Maze {
 	
 	private void setItem() 
 	{
-		if(this.row == 0 && this.col == 0)
-		{
-			this.item = "H";
-			this.filled = true;
-		}
-		else
-		{
 			int type = rollItem(0,99);
 			String spawned = spawnItem(type);
 			updateItem(spawned);
-		}
 	}
 
 	private void setCol(int setcol) 
@@ -60,7 +52,7 @@ public class Maze {
 			return "P";
 		}
 		
-		return " ";
+		return null;
 	}
 	
 	private int rollItem(int min,int max)
@@ -96,20 +88,35 @@ public class Maze {
 		{
 			updateItem("X");
 		}
-		
+		if(instance.contains("Hero"))
+		{
+			updateItem("H");
+		}
 	}
 
 	private void updateItem(String newitem)
 	{
-		if(this.item == null)
+	    if(this.col == 0 && this.row == 0)
+	    {
+	    	
+	    }
+	    else if(this.col == 4 && this.row == 4)
+	    {
+	    	
+	    }
+	    else if(newitem == null)
+	    {
+	    	
+	    }
+		else if(this.item == null)
 		{
 			this.item = newitem;
 			this.filled = true;;
 			this.itemcount++;
 		}
-		else
+		else if(itemcount < 3)
 		{
-			this.item = newitem;
+			this.item = this.item + newitem;
 			this.filled = true;
 			this.itemcount++;
 		}
@@ -117,18 +124,89 @@ public class Maze {
 	
 	public String toString()
     {
-    	//designing room based on position
-    	String roomdesign="";
-    	roomdesign = createRoom(row,col);
+		String fill = "";
+		if(this.item == null)
+		{
+			fill = " ";
+		}
+		else if (this.itemcount >= 2)
+		{
+			fill = "M";
+		}
+		else if(this.itemcount == 1)
+		{
+			fill = this.item;
+		}
 
-    	return roomdesign;
+		
+		//edges
+		if(row==0)
+		{
+			if(col==0)
+			{
+				return "***" + "@*" + "E" + "|@" + "*-*";
+			}
+			else if(col==4)
+			{
+				return "***" + "@|" + fill + "*@" + "*-*";
+
+			}
+			else if((col>0 || col<4))
+			{
+				return "***" + "@|" + fill + "|@" + "*-*";
+			}
+			
+		}
+		
+		//edges
+		else if(row==4)
+		{
+			if(col==0)
+			{
+				return "*-*" + "@*" + fill + "|@" + "***";
+
+			}
+			
+			if(col==4)
+			{
+				return "*-*" + "@|" + "E" +"*@" + "***";
+			}
+			else if((col>0 || col<4))
+			{
+				return "*-*" + "@|" + fill + "|@" + "***";
+
+			}
+		}
+		
+		//edges 
+		else if(col == 0)
+		{
+			if((row>0 || row<4))
+			{
+				return "*-*" + "@*" + fill + "|@" + "*-*";
+				
+			}
+		}
+		
+		//edges
+		else if(col == 4)
+		{
+			if((row>0 || row<4))
+			{
+				return "*-*" + "@|" + fill + "*@" + "*-*";
+			}
+		}
+		
+		//middle
+		else if((row>0 || row<4) && (col>0 || col<4))
+		{
+			return "*-*" + "@|" + fill + "|@" + "*-*";
+
+		}
+
+    	return "";
     }
 	
-	private String createRoom(int r,int c)
-	{
-		//String fill = "";
-		//if(itemcount =)
-		String room = "|" + this.item + "|";
-		return room;
-	}
+
+	
 }

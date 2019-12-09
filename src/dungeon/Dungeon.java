@@ -28,11 +28,10 @@ public class Dungeon {
 	//TO BE USED ONLY FOR DEV TESTING CERTAIN METHODS
 	public static void devMode()
 	{
-		MazeMaker theMaze = new MazeMaker();
 		DungeonCharacter hero;
 		HeroFactory hFactory = new HeroFactory();
 		hero = hFactory.createHero(convertChoice(1));
-		theMaze.spawnHero(hero);
+		MazeMaker theMaze = new MazeMaker(hero);
 		hero.pingloc();
 		System.out.println("");
 		System.out.println("Checking maze");
