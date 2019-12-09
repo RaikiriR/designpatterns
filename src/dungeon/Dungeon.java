@@ -7,9 +7,12 @@ public class Dungeon {
 		HeroFactory hFactory = new HeroFactory();
 		MonsterFactory mFactory = new MonsterFactory();
 		DungeonCharacter hero, monster;
+<<<<<<< HEAD
 		MazeMaker theMaze = new MazeMaker();
 		//DEVMODE
 		devMode();
+=======
+>>>>>>> 32a74a91650460d34d3d5642d470045c033d5cdc
 		Scanner kb = new Scanner(System.in);
 		do {
 			int choice = 3;
@@ -22,6 +25,7 @@ public class Dungeon {
 			battle(hero, monster, kb);
 		} while (playAgain(kb));
 		kb.close();
+<<<<<<< HEAD
 		
 		
 	}
@@ -34,6 +38,10 @@ public class Dungeon {
 		System.out.close();
 	}
 	
+=======
+	}
+
+>>>>>>> 32a74a91650460d34d3d5642d470045c033d5cdc
 	private static void battle(DungeonCharacter hero, DungeonCharacter monster, Scanner kb) {
 			String pause = "p";
 			System.out.println(hero.getName() + " battles " + monster.getName());
