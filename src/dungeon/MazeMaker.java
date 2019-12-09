@@ -4,14 +4,14 @@ import java.util.Random;
 
 public class MazeMaker {
 
-	private Maze[][] maze;
+	private Room[][] maze;
 	private DungeonCharacter hero;
 	private int row = 5;
 	private int col = 5;
 	
 	public MazeMaker(DungeonCharacter hero)
 	{
-		setMaze(getSpecs(1),getSpecs(2));
+		setRoom(getSpecs(1),getSpecs(2));
 		spawnPillars(4);
 		setExit();
 		spawnHero(hero,maze);
@@ -31,21 +31,21 @@ public class MazeMaker {
 		return 0;
 	}
 	
-	public Maze[][] setMaze(int row, int col)
+	public Room[][] setRoom(int row, int col)
 	{
-		maze = new Maze[row][col];
+		maze = new Room[row][col];
 		stepThrough(row,col,maze);
 		return maze;
 	}
 	
 	/*Initialize the rooms inside the maze */
-	public Maze[][] stepThrough(int row, int col, Maze[][] maze)
+	public Room[][] stepThrough(int row, int col, Room[][] maze)
 	{
 		for(int r=0; r <row; r++)
 		{
 			for(int c=0; c<col;c++)
 			{
-				maze[r][c]=new Maze(r,c);
+				maze[r][c]=new Room(r,c);
 			}
 		}
 		return maze;
@@ -64,7 +64,7 @@ public class MazeMaker {
 		maze[4][4].spawnInstance("Exit");
 	}
 	
-	public void spawnHero(DungeonCharacter hero,Maze[][] maze)
+	public void spawnHero(DungeonCharacter hero,Room[][] maze)
 	{
 		boolean passtest = false;
 		int row = 1;
@@ -116,7 +116,7 @@ public class MazeMaker {
 	
 	public void checkMaze(MazeMaker maze)
 	{
-		Maze[][] mazer = this.maze;
+		Room[][] mazer = this.maze;
 		int count = 0;
 		for(int r=0; r <this.row; r++)
 		{
@@ -132,7 +132,7 @@ public class MazeMaker {
 	
 	public void printDungeon()
     {
-		Maze[][] mazer = this.maze;
+		Room[][] mazer = this.maze;
 		for(int r=0;r<5;r++)
         {
             String[] rows=new String[3];
