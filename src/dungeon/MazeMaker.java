@@ -159,4 +159,90 @@ public class MazeMaker {
 		
 		
     }
+	
+		
+		
+	public void vizion(int row, int col)
+    {
+		Room[][] mazer = this.maze;
+		int rowlow = calculateConstraint(row,col,"rowlow");
+		int rowhigh = calculateConstraint(row,col,"rowhigh");
+		int collow = calculateConstraint(row,col,"collow");
+		int colhigh = calculateConstraint(row,col,"colhigh");
+		for(int r=rowlow;r<rowhigh+1;r++)
+        {
+            String[] vrows=new String[3];
+            vrows[0]="";
+            vrows[1]="";
+            vrows[2]="";
+            
+            
+            //Creating 5 modules of 3 line rooms
+            for(int c=collow;c<colhigh+1;c++)
+            {
+                  String[] vrow=mazer[r][c].toString().split("@");
+                  vrows[0]+=vrow[0];
+                  vrows[1]+=vrow[1];
+                  vrows[2]+=vrow[2];
+            }
+            
+            //Printing 3 lines = 1 row
+            for(int l=0;l<3;l++)
+            {
+                System.out.println(vrows[l]);
+            }
+        }
+	
+    }
+	
+	private int calculateConstraint(int row, int col, String type)
+	{
+		if(type.equals("rowlow"))
+		{
+			if(row -1 < 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return row-1;
+			}
+		}
+		
+		if(type.equals("rowhigh"))
+		{
+			if(row + 1 > 4)
+			{
+				return 4;
+			}
+			else
+			{
+				return row + 1;
+			}
+		}
+		
+		if(type.equals("collow"))
+		{
+			if(col-1 < 0)
+			{
+				return 0;
+			}
+			else
+			{
+				return col-1;
+			}
+		}
+		if(type.equals("colhigh"))
+		{
+			if(col + 1 > 4)
+			{
+				return 4;
+			}
+			else
+			{
+				return col + 1;
+			}
+		}
+		return 0;
+	}
 }

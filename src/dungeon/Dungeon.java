@@ -36,6 +36,7 @@ public class Dungeon {
 		System.out.println("");
 		System.out.println("Checking maze");
 		theMaze.printDungeon();
+		theMaze.vizion(3, 3);
 		System.exit(0);
 	}
 	
