@@ -53,10 +53,10 @@ public class MazeMaker {
 	
 	public void spawnPillars(int pillars)
 	{
-		maze[2][2].spawnInstance("Pillar");
+		maze[3][2].spawnInstance("Pillar");
 		maze[2][3].spawnInstance("Pillar");
-		maze[2][4].spawnInstance("Pillar");
-		maze[2][1].spawnInstance("Pillar");
+		maze[4][4].spawnInstance("Pillar");
+		maze[1][4].spawnInstance("Pillar");
 	}
 	
 	private void setExit()

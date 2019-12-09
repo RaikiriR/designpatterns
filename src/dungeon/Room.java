@@ -47,11 +47,22 @@ public class Room {
 	
 	private String spawnItem(int type)
 	{
-		if(type < 50)
+		if(type < 20)
 		{
-			return "P";
+			return "H";
 		}
-		
+		if(type > 20 && type < 40)
+		{
+			return "X";
+		}
+		if(type > 40 && type < 50)
+		{
+			return "V";
+		}
+		if(type > 40 && type < 50)
+		{
+			return "V";
+		}
 		return null;
 	}
 	
@@ -82,15 +93,15 @@ public class Room {
 	{
 		if(instance.contains("Exit"))
 		{
-			updateItem("E");
+			updateItem("O");
 		}
 		if(instance.contains("Pillar"))
 		{
-			updateItem("X");
+			updateItem("T");
 		}
 		if(instance.contains("Hero"))
 		{
-			updateItem("H");
+			updateItem("Y");
 		}
 	}
 
@@ -127,7 +138,7 @@ public class Room {
 		String fill = "";
 		if(this.item == null)
 		{
-			fill = " ";
+			fill = "E";
 		}
 		else if (this.itemcount >= 2)
 		{
@@ -144,7 +155,7 @@ public class Room {
 		{
 			if(col==0)
 			{
-				return "***" + "@*" + "E" + "|@" + "*-*";
+				return "***" + "@*" + "I" + "|@" + "*-*";
 			}
 			else if(col==4)
 			{
@@ -169,7 +180,7 @@ public class Room {
 			
 			if(col==4)
 			{
-				return "*-*" + "@|" + "E" +"*@" + "***";
+				return "*-*" + "@|" + "O" +"*@" + "***";
 			}
 			else if((col>0 || col<4))
 			{
