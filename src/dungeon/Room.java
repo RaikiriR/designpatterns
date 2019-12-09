@@ -142,9 +142,10 @@ public class Room {
 	    {
 	    	if(newitem != null)
 	    	{
-		    	if(newitem.contains("O"))
+		    	if(newitem.contains("Y"))
 		    	{
-		    		this.item = newitem;
+		    		this.item = "Y";
+		    		this.itemcount++;
 		    	}
 	    	}
 	    }

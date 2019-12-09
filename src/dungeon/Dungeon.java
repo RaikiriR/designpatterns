@@ -42,14 +42,7 @@ public class Dungeon {
 		hero = hFactory.createHero(convertChoice(1));
 		MazeMaker theMaze = new MazeMaker(hero);
 		
-		//theMaze.test(1, 0);
-		//theMaze.printDungeon();
-		
-		confirmChoice(hero,choice,theMaze);
-		theMaze.test(1, 0);
-		theMaze.roomStep(hero);
 		theMaze.printDungeon();
-		//theMaze.printDungeon();
 		System.exit(0);
 	}
 		
