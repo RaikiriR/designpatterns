@@ -138,6 +138,16 @@ public class Room {
 		    	}
 	    	}
 	    }
+	    else if(this.col == 0 && this.row == 1)
+	    {
+	    	if(newitem != null)
+	    	{
+		    	if(newitem.contains("O"))
+		    	{
+		    		this.item = newitem;
+		    	}
+	    	}
+	    }
 	    else if(newitem == null)
 	    {
 	    	
@@ -241,5 +251,20 @@ public class Room {
     	return "";
     }
 	
-	
+	public void removeItem()
+	{
+		if(this.item != null)
+		{
+			this.item = this.item.substring(1);
+			this.itemcount = this.itemcount -1;
+		}
+		if(this.item != null)
+		{
+			if(this.item.contentEquals(""))
+			{
+				this.item = null;
+			}
+		}
+		
+	}
 }

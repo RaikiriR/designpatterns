@@ -260,34 +260,69 @@ public class MazeMaker {
 		if(items.contains("T"))
 		{
 			System.out.println("Congrats you have found a pillar of OO");
+			maze[row][col].removeItem();
+
 		}
 		if(items.contains("P"))
 		{
 			System.out.println("You have fallen and taken damage!");
+			maze[row][col].removeItem();
+
 		}
 		if(items.contains("I"))
 		{
 			System.out.println("That is the enterance");
+			maze[row][col].removeItem();
+
 		}
 		if(items.contains("V"))
 		{
 			System.out.println("Vizion potion obtained!");
+			maze[row][col].removeItem();
+
 		}
 		if(items.contains("H"))
 		{
 			System.out.println("Healing potion obtained!");
+			maze[row][col].removeItem();
+
 		}
 		if(items.contains("E"))
 		{
 			System.out.println("This is an empty room...");
+
 		}
 		if(items.contains("X"))
 		{
 			System.out.println("..!\nA monster has been encountered, prepare for battle!");
+			maze[row][col].removeItem();
+
 		}
 		if(items.contains("O"))
 		{
 			System.out.println("This is the exit\nDo you have all the pillars needed?");
+			maze[row][col].removeItem();
 		}
+		if(maze[row][col].getItem().contentEquals("E"))
+		{
+			maze[row][col].removeItem();
+			maze[row][col].removeItem();
+			maze[row][col].spawnInstance("Hero");
+		}
+
+	}
+
+	public void lastHero(int rowprev, int colprev, int rowcur, int colcur) 
+	{
+		if(maze[rowprev][colprev].getItem().contains("Y"))
+		{
+			maze[rowprev][colprev].removeItem();
+		}
+		maze[rowprev][colprev].removeItem();
+	}
+	
+	public void test(int x, int y)
+	{
+		maze[x][y].removeItem();
 	}
 }
