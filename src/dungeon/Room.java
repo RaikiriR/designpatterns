@@ -86,7 +86,14 @@ public class Room {
 	}
 	public String getItem()
 	{
-		return this.item;
+		if(this.item == null)
+		{
+			return "E";
+		}
+		else
+		{
+			return this.item;
+		}
 	}
 	
 	public void spawnInstance(String instance)
@@ -103,17 +110,33 @@ public class Room {
 		{
 			updateItem("Y");
 		}
+		if(instance.contains("Enter"))
+		{
+			updateItem("I");
+		}
 	}
 
 	private void updateItem(String newitem)
 	{
 	    if(this.col == 0 && this.row == 0)
 	    {
-	    	
+	    	if(newitem != null)
+	    	{
+		    	if(newitem.contains("I"))
+		    	{
+		    		this.item = newitem;
+		    	}
+	    	}
 	    }
 	    else if(this.col == 4 && this.row == 4)
 	    {
-	    	
+	    	if(newitem != null)
+	    	{
+		    	if(newitem.contains("O"))
+		    	{
+		    		this.item = newitem;
+		    	}
+	    	}
 	    }
 	    else if(newitem == null)
 	    {

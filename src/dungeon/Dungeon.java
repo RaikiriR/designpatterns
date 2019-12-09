@@ -8,7 +8,7 @@ public class Dungeon {
 		MonsterFactory mFactory = new MonsterFactory();
 		DungeonCharacter hero, monster;
 		//DEVMODE
-		//devMode();
+		devMode();
 		Scanner kb = new Scanner(System.in);
 		do {
 			int choice = 3;
@@ -19,6 +19,7 @@ public class Dungeon {
 			MazeMaker theMaze = new MazeMaker(hero);
 			
 			//Prep is done
+			//Playing game
 			printWelcome(hero);
 			System.out.println();
 			System.out.println("Thunder crashes!!");
@@ -30,9 +31,26 @@ public class Dungeon {
 		
 	}
 
+		
+	//TO BE USED ONLY FOR DEV TESTING CERTAIN METHODS
+	private static void devMode()
+	{
+		DungeonCharacter hero;
+		HeroFactory hFactory = new HeroFactory();
+		hero = hFactory.createHero(convertChoice(1));
+		MazeMaker theMaze = new MazeMaker(hero);
+		theMaze.printDungeon();
+		hero.setLoc(4, 4);
+		System.out.print("Hero location ");
+		hero.pingloc();
+		theMaze.roomStep(hero);
+		System.exit(0);
+	}
+		
 	public static void mainMenu(DungeonCharacter hero, Scanner kb,MazeMaker theMaze) 
 	{
-		while(true)
+		boolean finishgame = false;
+		while(finishgame == false)
 		{
 			mainStage(hero);
 			int mchoice = mainChoice(hero,kb);
@@ -40,8 +58,21 @@ public class Dungeon {
 			{
 				moveMenu(theMaze,hero,kb);
 			}
+			if(mchoice == 3)
+			{
+				gameState(3);
+			}
 			//battle(hero, monster, kb);
 		}
+	}
+
+	private static void gameState(int i) 
+	{
+		if(i == 3)
+		{
+			
+		}
+		
 	}
 
 	private static void moveMenu(MazeMaker maze, DungeonCharacter hero, Scanner kb) 
@@ -66,6 +97,8 @@ public class Dungeon {
 		while (!validMove(maze,choice,hero));
 		
 		confirmChoice(hero,choice);
+		
+		maze.roomStep(hero);
 		
 	}
 
@@ -166,17 +199,6 @@ public class Dungeon {
 		}
 		while (choice<0 || choice>5);
 		return choice;
-	}
-	
-	//TO BE USED ONLY FOR DEV TESTING CERTAIN METHODS
-	private static void devMode()
-	{
-		DungeonCharacter hero;
-		HeroFactory hFactory = new HeroFactory();
-		hero = hFactory.createHero(convertChoice(1));
-		MazeMaker theMaze = new MazeMaker(hero);
-		theMaze.printDungeon();
-		System.exit(0);
 	}
 	
 	private static void printWelcome(DungeonCharacter hero)

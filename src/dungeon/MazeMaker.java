@@ -14,6 +14,7 @@ public class MazeMaker {
 		setRoom(getSpecs(1),getSpecs(2));
 		spawnPillars(4);
 		setExit();
+		setEnter();
 		spawnHero(hero,maze);
 		
 	}
@@ -62,6 +63,10 @@ public class MazeMaker {
 	private void setExit()
 	{
 		maze[4][4].spawnInstance("Exit");
+	}
+	private void setEnter()
+	{
+		maze[0][0].spawnInstance("Enter");
 	}
 	
 	public void spawnHero(DungeonCharacter hero,Room[][] maze)
@@ -244,5 +249,45 @@ public class MazeMaker {
 			}
 		}
 		return 0;
+	}
+
+	public void roomStep(DungeonCharacter heroin) 
+	{
+		int[] loccheck = heroin.getLoc();
+		int row = loccheck[0];
+		int col = loccheck[1];
+		String items = maze[row][col].getItem();
+		if(items.contains("T"))
+		{
+			System.out.println("Congrats you have found a pillar of OO");
+		}
+		if(items.contains("P"))
+		{
+			System.out.println("You have fallen and taken damage!");
+		}
+		if(items.contains("I"))
+		{
+			System.out.println("That is the enterance");
+		}
+		if(items.contains("V"))
+		{
+			System.out.println("Vizion potion obtained!");
+		}
+		if(items.contains("H"))
+		{
+			System.out.println("Healing potion obtained!");
+		}
+		if(items.contains("E"))
+		{
+			System.out.println("This is an empty room...");
+		}
+		if(items.contains("X"))
+		{
+			System.out.println("..!\nA monster has been encountered, prepare for battle!");
+		}
+		if(items.contains("O"))
+		{
+			System.out.println("This is the exit\nDo you have all the pillars needed?");
+		}
 	}
 }
