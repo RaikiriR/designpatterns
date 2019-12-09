@@ -94,9 +94,13 @@ public abstract class DungeonCharacter {
 	
 	public void pingloc()
 	{
+		System.out.print("[");
 		System.out.print(loc[0]);
-		System.out.print(" - ");
+		System.out.print("]");
+		System.out.print("-");
+		System.out.print("[");
 		System.out.print(loc[1]);
+		System.out.println("]");
 	}
 	
 	protected void battleChoices(DungeonCharacter monster, Scanner kb) {}

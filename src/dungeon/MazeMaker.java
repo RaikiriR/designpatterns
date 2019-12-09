@@ -78,7 +78,7 @@ public class MazeMaker {
 		*/
 		maze[row][col].spawnInstance("Hero");
 		hero.setLoc(row, col);
-		System.out.print("Hero set, pinging for location ");
+
 	}
 	
 	public void setHero(Hero hero)
