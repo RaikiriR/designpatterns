@@ -1,0 +1,101 @@
+Dungeon Refactor - Justin Ching, Ron Robinson, Cooper Wutzke
+
+--------------------------------------
+
+1. Code Refactor: Factory Pattern Implemented
+	Reasoning: More easily allows for expansion of Hero/Monster types.
+		   Allows creation of Hero/Monster without specifying which type at instantiation.
+
+2. Code Refactor - Removed Comments
+	Reasoning: Methods/Fields should be self-evident what they do.
+	Example Code: 
+		/*-------------------------------------------------------------------
+		playAgain allows gets choice from user to play another game.  It returns
+		true if the user chooses to continue, false otherwise.
+		---------------------------------------------------------------------*/
+
+3. Code Refactor - Renamed Fields/Methods
+	Reasoning: Some of the naming choices were difficult to understand at a glance.
+	Example Code:
+		int blowPoints = (int)(Math.random() * 76) + 100;
+		public final int MIN_ADD = 25;
+		public final int MAX_ADD = 50;
+
+4. Code Refactor - Separated functionality of subtractHitPoints
+	Reasoning: Long Method code smell. It had multiple tasks and separating it makes it easier to understand/change.
+	Example Code:
+		public void subtractHitPoints(int hitPoints) {
+			if (hitPoints <0)
+				System.out.println("Hitpoint amount must be positive.");
+			else if (hitPoints >0)
+			{
+				this.hitPoints -= hitPoints;
+				if (this.hitPoints < 0)
+					this.hitPoints = 0;
+				System.out.println(getName() + " hit for <" + hitPoints + "> points damage.");
+				System.out.println(getName() + " now has " + getHitPoints() + " hit points remaining.");
+				System.out.println();
+			}//end else if
+
+			if (this.hitPoints == 0)
+				System.out.println(name + " has been killed :-(");
+		}
+
+
+5. Code Refactor - Dependency Inversion with damage/heal methods
+	Reasoning: Duplicate code with minor alterations.
+	Example Code:
+		System.out.println(getName() + " hit for <" + hitPoints + "> points damage.");
+		System.out.println(getName() + " now has " + getHitPoints() + " hit points remaining.");
+		System.out.println("Remaining Hit Points: " + hitPoints);
+		System.out.println(name + " added [" + hPoints + "] points.\n"
+					+ "Total hit points remaining are: " + hitPoints);
+		System.out.println(name + " healed itself for " + healPoints + " points.\n"
+					+ "Total hit points remaining are: " + hitPoints);
+
+6. Code Refactor - Removed Comparable
+	Reasoning: Speculative Generality code smell. DungeonCharacter is never actually compared in the code.
+	Example Code:
+		public int compareTo(Object o) {
+		return 1;
+		}
+
+7. Code Refactor - Replaced Keyboard class with Scanner version.
+	Reasoning: Long Class code smell. Updated utilities allow for use of keyboard without complicated code.
+	Example Code:
+		 try {
+        	 	if (reader == null)
+            			reader = new StringTokenizer
+               				(in.readLine(), delimiters, true);
+
+         		while (token == null || ((delimiters.indexOf (token) >= 0) && skip)) {
+            			while (!reader.hasMoreTokens())
+               				reader = new StringTokenizer
+                  				(in.readLine(), delimiters,true);
+
+            			token = reader.nextToken();
+         			}
+      			}
+      		catch (Exception exception) {
+         		token = null;
+      		}
+
+8. Code Refactor - Merged defend into subtractHitPoints in Hero class.
+	Reasoning: The defend method as a separate entity was unnecessary.
+	Code Example:
+		public boolean defend() {
+			return Math.random() <= chanceToBlock;
+		}
+
+9. Code Refactor - Changed some fields to private.
+	Reasoning: Unnecessary for outside classes to access certain fields.
+	Code Example:
+		protected int attackSpeed;
+		protected double chanceToHit;
+		protected int damageMin, damageMax;
+		
+10. Code Refactor - Added Exception Handling
+	Reasoning: Added exception handling so that the code doesnt break if invalid inputs are given.
+	
+11. Code Refactor - Added attack method to Thief class.
+	Reasoning: Every other Hero/Monster had an attack method with some flavor text except for Thief.

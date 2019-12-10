@@ -1,10 +1,4 @@
-# designpatterns
-Dungeon Refactor
 
-=======
--
-changes - to testbranch
--
-change - at coopers
-
-
+Dungeon Refactor - Justin, Ron, Cooper
+---
+The code refactor and changes list is located in the Refactor Log 
