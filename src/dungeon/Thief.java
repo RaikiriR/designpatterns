@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Thief extends Hero {
 
 	public Thief(AttackFactory attackFactory) {
-		super("Thief", 75, 6, "Fireball", .4, attackFactory);
+		super("Thief", 75, 6, "Dagger", .4, attackFactory);
 	}
 
 	public void surpriseAttack(DungeonCharacter opponent) {
@@ -26,7 +26,6 @@ public class Thief extends Hero {
 	}
 	
 	public void attack(DungeonCharacter opponent) {
-		System.out.println(name + " throws a dagger at " + opponent.getName() + ":");
 		super.attack.attack(this, opponent);
 	}
 

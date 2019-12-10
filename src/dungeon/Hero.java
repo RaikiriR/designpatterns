@@ -8,10 +8,12 @@ public abstract class Hero extends DungeonCharacter {
 	protected int healPot = 0;
 	protected int visPot = 0;
 	protected int pillarOO = 0;
+	protected Attack spAttack;
 	
-	public Hero(String name, int health, int speed, String attack, double blockChance, AttackFactory attackFactory) {
+	public Hero(String name, int health, int speed, String attack, double blockChance, AttackFactory attackFactory, String spAttack) {
 		super(name, health, speed, attack, attackFactory);
 		this.blockChance = blockChance;
+		this.spAttack = attackFactory.getAttack(spAttack);
 	}
 	
 	public void readName(Scanner kb) {
