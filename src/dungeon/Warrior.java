@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Warrior extends Hero {
 
-	public Warrior() {
-		super("Warrior", 125, 4, 35, 60, .8, .2);
+	public Warrior(AttackFactory attackFactory) {
+		super("Warrior", 125, 4, "Greatsword", .2, attackFactory);
 	}
 	
 	public void crushingBlow(DungeonCharacter opponent) {
@@ -19,11 +19,6 @@ public class Warrior extends Hero {
 		}
 	}
 
-	public void attack(DungeonCharacter opponent) {
-		System.out.println(name + " swings a mighty sword at " + opponent.getName() + ":");
-		super.attack(opponent);
-	}
-
     public void battleChoices(DungeonCharacter opponent, Scanner kb) {
 		super.battleChoices(opponent, kb);
 		do {
@@ -35,7 +30,7 @@ public class Warrior extends Hero {
 		    {
 			    case 1: 
 			    	System.out.println();
-			    	attack(opponent);
+			    	attack.attack(this, opponent);
 			        break;
 			    case 2: 
 			    	System.out.println();

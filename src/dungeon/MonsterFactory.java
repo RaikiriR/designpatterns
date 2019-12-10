@@ -3,7 +3,7 @@ package dungeon;
 public class MonsterFactory {
 	Monster monster;
 	
-	public Monster createMonster() {
+	public Monster createMonster(AttackFactory attackFactory) {
 		Monster monster = null;
 		int choice = (int)(Math.random() * 3) + 1;
 
@@ -13,13 +13,13 @@ public class MonsterFactory {
 		}
 			switch (choice) {
 		case 1:
-			monster = new Ogre();
+			monster = new Ogre(attackFactory);
 			break;
 		case 2:
-			monster = new Gremlin();
+			monster = new Gremlin(attackFactory);
 			break;
 		case 3:
-			monster = new Skeleton();
+			monster = new Skeleton(attackFactory);
 			break;
 		}
 		return monster;

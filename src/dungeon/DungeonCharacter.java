@@ -6,27 +6,14 @@ public abstract class DungeonCharacter {
 	protected String name;
 	protected int health;
 	private int speed;
-	private int damageMin, damageMax;
-	private double hitChance;
 	private int[] loc;
+	protected Attack attack;
 	
-	public DungeonCharacter(String name, int health, int speed, int damageMin, int damageMax, double hitChance) {
+	public DungeonCharacter(String name, int health, int speed, String attack, AttackFactory attackFactory) {
 		this.name = name;
 		this.health = health;
 		this.speed = speed;
-		this.damageMin = damageMin;
-		this.damageMax = damageMax;
-		this.hitChance = hitChance;
-	}
-	
-	public void attack(DungeonCharacter opponent) {
-		if (Math.random() <= hitChance) {
-			int damageAmount = (int)(Math.random() * (damageMax - damageMin + 1)) + damageMin ;
-			opponent.damage(damageAmount);
-		} else {
-			System.out.println(name + "'s attack on " + opponent.getName() + " failed!");
-			System.out.println();
-		}
+		this.attack = attackFactory.getAttack(attack);
 	}
 	
 	public void heal(int healAmount) {
@@ -103,6 +90,6 @@ public abstract class DungeonCharacter {
 		System.out.println("]");
 	}
 	
-	protected void battleChoices(DungeonCharacter monster, Scanner kb) {}
+	protected void battleChoices(DungeonCharacter opponent, Scanner kb) {}
 	
 }

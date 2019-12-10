@@ -7,8 +7,8 @@ public class Sorceress extends Hero {
 	private int minHeal = 25;
 	private int maxHeal = 50;
 
-	public Sorceress() {
-		super("Sorceress", 75, 5, 25, 45, .7, .3);
+	public Sorceress(AttackFactory attackFactory) {
+		super("Sorceress", 75, 5, "Fireball", .3, attackFactory);
 	}
 
 	public void healingWord() {
@@ -16,22 +16,17 @@ public class Sorceress extends Hero {
 		heal(healAmount);
     }
 
-	public void attack(DungeonCharacter opponent) {
-		System.out.println(name + " casts Fireball at " + opponent.getName() + ":");
-		super.attack(opponent);
-	}
-
     public void battleChoices(DungeonCharacter opponent, Scanner kb) {
 		super.battleChoices(opponent, kb);
 		do {
 		    System.out.println("1. Attack Opponent");
-		    System.out.println("2. Increase Hit Points");
+		    System.out.println("2. Cast Healing Word");
 		    System.out.print("Choose an option: ");
 		    
 		    switch (Keyboard.kbChoose(kb,2)) {
 			    case 1: 
 			    	System.out.println();
-			    	attack(opponent);
+			    	attack.attack(this, opponent);
 			        break;
 			    case 2: 
 			    	System.out.println();
