@@ -42,7 +42,7 @@ Dungeon Refactor - Justin Ching, Ron Robinson, Cooper Wutzke
 		}
 
 
-5. Code Refactor - Dependency Inversion
+5. Code Refactor - Dependency Inversion with damage/heal methods
 	Reasoning: Duplicate code with minor alterations.
 	Example Code:
 		System.out.println(getName() + " hit for <" + hitPoints + "> points damage.");
@@ -60,7 +60,7 @@ Dungeon Refactor - Justin Ching, Ron Robinson, Cooper Wutzke
 		return 1;
 		}
 
-7. Code Refactor - Replaced Keyboard class with Scanner
+7. Code Refactor - Replaced Keyboard class with Scanner version.
 	Reasoning: Long Class code smell. Updated utilities allow for use of keyboard without complicated code.
 	Example Code:
 		 try {
@@ -96,3 +96,6 @@ Dungeon Refactor - Justin Ching, Ron Robinson, Cooper Wutzke
 		
 10. Code Refactor - Added Exception Handling
 	Reasoning: Added exception handling so that the code doesnt break if invalid inputs are given.
+	
+11. Code Refactor - Added attack method to Thief class.
+	Reasoning: Every other Hero/Monster had an attack method with some flavor text except for Thief.
