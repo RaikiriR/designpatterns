@@ -6,7 +6,6 @@ public abstract class DungeonCharacter {
 	protected String name;
 	protected int health;
 	private int speed;
-	private int[] loc;
 	protected Attack attack;
 	
 	public DungeonCharacter(String name, int health, int speed, String attack, AttackFactory attackFactory) {
@@ -67,29 +66,6 @@ public abstract class DungeonCharacter {
 		return speed;
 	}
 
-	public void setLoc(int row, int col) {
-        int[] updateloc = new int[2];
-        updateloc[0] = row;
-        updateloc[1] = col;
-        loc = updateloc;
-    }
-	
-	public int[] getLoc()
-	{
-		return loc;
-	}
-	
-	public void pingloc()
-	{
-		System.out.print("[");
-		System.out.print(loc[0]);
-		System.out.print("]");
-		System.out.print("-");
-		System.out.print("[");
-		System.out.print(loc[1]);
-		System.out.println("]");
-	}
-	
 	protected void battleChoices(DungeonCharacter opponent, Scanner kb) {}
 	
 }

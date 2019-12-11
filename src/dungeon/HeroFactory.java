@@ -15,6 +15,12 @@ public class HeroFactory {
 		case "thief":
 			hero = new Thief(attackFactory);
 			break;
+		case "knight":
+			hero = new Knight(attackFactory);
+			break;
+		case "wizard":
+			hero = new Wizard(attackFactory);
+			break;
 		}
 		return hero;
 	}
