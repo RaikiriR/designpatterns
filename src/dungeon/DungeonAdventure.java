@@ -1,3 +1,6 @@
+//Ron Robinson III. Justin Ching. Cooper Wutzke
+//To run the developer (full-sight) cheat, when asked to "Enter anything to continue", enter 'dev1'
+
 package dungeon;
 import java.util.*;
 
