@@ -1,7 +1,10 @@
 package dungeon;
 
-public class Room {
+import java.io.Serializable;
 
+public class Room implements Serializable {
+
+	private static final long serialVersionUID = 4L;
 	private String item = "";
 	private int itemcount;
 	private int[] loc = new int[2];

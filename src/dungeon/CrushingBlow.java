@@ -1,7 +1,7 @@
 package dungeon;
 
 public class CrushingBlow implements Attack {
-	
+
 	public void attack(DungeonCharacter self, DungeonCharacter opponent) {
 			System.out.println(self.getName() + " swings a mighty, crushing blow at " + opponent.getName());
 			baseAttack(self, opponent, 75, 175, .4);

@@ -1,8 +1,9 @@
 package dungeon;
 
-public class MonsterFactory {
-	Monster monster;
-	
+import java.io.Serializable;
+
+public class MonsterFactory implements Serializable {
+
 	public Monster createMonster(AttackFactory attackFactory) {
 		Monster monster = null;
 		int choice = (int)(Math.random() * 5) + 1;

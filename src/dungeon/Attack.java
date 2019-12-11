@@ -1,6 +1,8 @@
 package dungeon;
 
-public interface Attack {
+import java.io.Serializable;
+
+public interface Attack extends Serializable {
 	
 	public void attack(DungeonCharacter self, DungeonCharacter opponent);
 

@@ -1,8 +1,10 @@
 package dungeon;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public abstract class DungeonCharacter {
+public abstract class DungeonCharacter implements Serializable {
+	
 	protected String name;
 	protected int health;
 	private int speed;

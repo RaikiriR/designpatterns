@@ -3,6 +3,7 @@ package dungeon;
 import java.util.Scanner;
 
 public abstract class Hero extends DungeonCharacter {
+
 	protected double blockChance;
 	protected int turns;
 	protected int healPot = 0;

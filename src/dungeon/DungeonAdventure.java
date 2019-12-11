@@ -1,11 +1,12 @@
 package dungeon;
-import java.util.Scanner;
+import java.util.*;
 
 public class DungeonAdventure {
 	static HeroFactory hFactory = new HeroFactory();
 	static AttackFactory attackFactory = new AttackFactory();
 
 	public static void main(String[] args) {
+		List<Dungeon.Memento> savedStates = new ArrayList<Dungeon.Memento>();
 		boolean devmode = false;
 		
 		DungeonCharacter hero;
@@ -18,11 +19,14 @@ public class DungeonAdventure {
 			((Hero)hero).readName(kb);
 			Dungeon theMaze = new Dungeon(hero);
 			
+			theMaze.setDungeon(theMaze);
+			savedStates.add(theMaze.createMemento());
+			
 			devmode = printWelcome(hero, kb);
 			System.out.println();
 			System.out.println("Thunder crashes!!");
 			System.out.println();
-			mainMenu(hero, kb, theMaze, devmode);
+			mainMenu(hero, savedStates, kb, theMaze, devmode);
 		} while (playAgain(kb));
 		System.out.println("Exiting...");
 		kb.close();
@@ -37,9 +41,7 @@ public class DungeonAdventure {
 							"5. Wizard");
 	}
 
-	//TO BE USED ONLY FOR DEV TESTING CERTAIN METHODS
-		
-	public static void mainMenu(DungeonCharacter hero, Scanner kb, Dungeon theMaze, boolean devmode) {
+	public static void mainMenu(DungeonCharacter hero, List list, Scanner kb, Dungeon theMaze, boolean devmode) {
 		boolean finishgame = false;
 		boolean startgame = true;
 		while(finishgame == false) {
@@ -49,6 +51,7 @@ public class DungeonAdventure {
 				theMaze.printRoom(((Hero)hero).getLoc());
 				startgame = false;
 			}
+			System.out.println();
 			System.out.println(((Hero)hero).toString());
 			int mchoice = mainChoice(hero,kb);
 			if(mchoice == 1)
@@ -57,8 +60,21 @@ public class DungeonAdventure {
 				potionMenu(hero, theMaze, kb);
 			if(mchoice == 3)
 				gameState(3);
-			if(!hero.isAlive())
+			if(mchoice == 4) {
+				theMaze.setDungeon(theMaze);
+				Dungeon.Memento mem = theMaze.createMemento();
+				mem.save(theMaze);
+				list.add(mem);
+			}
+			if(mchoice == 5) {
+				theMaze = ((Dungeon.Memento)list.get(list.size()-1)).load();
+				hero = theMaze.getHero();
+				theMaze.printRoom(((Hero)hero).getLoc());
+			}
+			if(!hero.isAlive()) {
 				finishgame = true;
+				theMaze.printDungeon();
+			}
 		}
 	}
 
@@ -164,6 +180,8 @@ public class DungeonAdventure {
 			System.out.println("1. Move Room");
 			System.out.println("2. Use Item");
 			System.out.println("3. Give up");
+			System.out.println("4. Save Game");
+			System.out.println("5. Load Game");
 			choice = kb.nextInt();
 		} while (choice < 0 || choice > 5);
 		return choice;

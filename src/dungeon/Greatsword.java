@@ -1,6 +1,8 @@
 package dungeon;
 
-public class Greatsword implements Attack {
+import java.io.Serializable;
+
+public class Greatsword implements Attack, Serializable {
 	
 	public void attack(DungeonCharacter self, DungeonCharacter opponent) {
 		System.out.println(self.getName() + " swings a mighty sword at " + opponent.getName() + ".");

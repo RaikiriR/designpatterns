@@ -1,17 +1,30 @@
 package dungeon;
 
+import java.io.*;
 import java.util.Scanner;
 
-public class Dungeon {
+public class Dungeon implements Serializable {
 
 	private Room[][] maze;
 	private int row = 5;
 	private int col = 5;
 	private MonsterFactory mFactory = new MonsterFactory();
+	private Hero hero;
+	private Dungeon state;
 	
 	public Dungeon(DungeonCharacter hero) {
+		this.hero = (Hero)hero;
 		setRoom(row, col);
 		spawnHero(hero, maze);
+		state = this;
+	}
+	
+	public void setDungeon(Dungeon toSave) {
+		state = toSave;
+	}
+	
+	public Hero getHero() {
+		return this.hero;
 	}
 	
 	public Room getRoom(int row, int col) {
@@ -197,6 +210,9 @@ public class Dungeon {
 							+"\n Do you have all the pillars needed?");
 			if(((Hero)heroIn).getPillarOO() == 4) {
 				System.out.println("You've escaped the maze!");
+				System.out.println();
+				this.printDungeon();
+				System.out.println();
 				return true;
 			}
 			
@@ -207,5 +223,51 @@ public class Dungeon {
 	public void lastHero(int rowPrev, int colPrev) {
 		if(maze[rowPrev][colPrev].getItem().contains("Y"))
 			maze[rowPrev][colPrev].removeItem("Y");
+	}
+	
+	public Memento createMemento() {
+		return new Memento(state);
+	}
+	
+	public static class Memento {
+		private Dungeon saved;
+		
+		private Memento(Dungeon state) {
+			saved = state;
+		}
+		
+		public void save(Dungeon state) {
+			saved = state;
+			File location = new File("save.txt");
+			try { 
+	            FileOutputStream fout = new FileOutputStream (location); 
+	            ObjectOutputStream out = new ObjectOutputStream (fout); 
+	            out.writeObject(saved);
+	            out.close(); 
+	            fout.close(); 
+	        } 
+	        catch (IOException ex) { 
+	            System.out.println("IOException is caught in Memento Save"); 
+	        }
+		}
+		
+		public Dungeon load() {
+				File location = new File("save.txt");
+		        try { 
+		           FileInputStream fin = new FileInputStream(location); 
+		           ObjectInputStream in = new ObjectInputStream (fin); 
+		           saved = (Dungeon)in.readObject(); 
+		           in.close(); 
+		           fin.close(); 
+		           return saved;
+		       } 
+		       catch (IOException ex) { 
+		           System.out.println("IOException is caught in Memento Load"); 
+		       } 
+		       catch (ClassNotFoundException ex) { 
+		           System.out.println("ClassNotFoundException is caught in Memento Load"); 
+		       } 
+			return this.saved;
+		}
 	}
 }
