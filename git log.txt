@@ -1,0 +1,849 @@
+Justin Ching - Ron Robinson - Cooper Wutzke
+
+GIT LOG
+*Starting from recent -> oldest*
+
+107 Commits
+5 Branches
+
+
+
+commit 71a67e21b5dfabf28862645364369ffc8b2795d7 (HEAD -> master, origin/master, origin/HEAD)
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:43:38 2019 -0800
+
+    Adding JUnit ReadME
+
+commit 84cba1c8ece24d00f0447f821b83a5aa9351c0d1
+Merge: 32a74a9 a9082e7
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:40:23 2019 -0800
+
+    Merging final working DungeonAdventure program
+
+    Final Working Test Branch
+
+commit a9082e75d42303113d8144155106688ba037e141 (origin/TestBranch)
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:38:44 2019 -0800
+
+    Delete unused class
+
+commit 4cba987c64bcbec3ed856cda6605b0178a8e134b
+:...skipping...
+commit 71a67e21b5dfabf28862645364369ffc8b2795d7 (HEAD -> master, origin/master, origin/HEAD)
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:43:38 2019 -0800
+
+    Adding JUnit ReadME
+
+commit 84cba1c8ece24d00f0447f821b83a5aa9351c0d1
+Merge: 32a74a9 a9082e7
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:40:23 2019 -0800
+
+    Merging final working DungeonAdventure program
+
+    Final Working Test Branch
+
+commit a9082e75d42303113d8144155106688ba037e141 (origin/TestBranch)
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:38:44 2019 -0800
+
+    Delete unused class
+
+commit 4cba987c64bcbec3ed856cda6605b0178a8e134b
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:38:14 2019 -0800
+
+    Delete unused class
+
+commit 7973154aecb41f1fd5785611446f8e5726ab3397
+Merge: f99729c d700bdd
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:37:39 2019 -0800
+
+    Merging for the JUnit Tests
+
+    Justin
+
+commit d700bdda5d9086ccc9db53a230cf54e954ae1fdb (origin/Justin)
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:33:07 2019 -0800
+
+    Adding Hero Testing
+
+commit 74343dd2b0a8e3f79b8141b4aac5144e93b0aef8
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:16:44 2019 -0800
+
+    Importing Junit5
+
+commit 8e5961d465f02be23ba29d2cd3f55a88ab7b57c8
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:12:19 2019 -0800
+
+    Adding TestMonster Junit Test
+
+commit 2b8620345cf4e0620635109fa06fd302a36b7dcf
+Merge: 54dbb1b 0b2b0ef
+Author: Justin Ching <52725969+RaikiriR@users.noreply.github.com>
+Date:   Wed Dec 11 17:11:06 2019 -0800
+
+    Merge pull request #15 from RaikiriR/Ron
+
+    Ron
+
+commit 0b2b0ef10c0b90fb35a234568322ac0b3e6d64e1
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 16:59:58 2019 -0800
+
+    (junit) Test Hero Creation
+
+commit a0b180eb691a503a69e13f0c055becdbef9ec0e9
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 16:59:15 2019 -0800
+
+    Delete TestHeroCreate.class
+
+commit ec2b4814766d93bb53ff3821695a5fadb6fd02c2
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 16:58:45 2019 -0800
+
+    (junit) Test Hero Creation
+
+commit f99729cd592ee8303498c28a2ecd2c60b4556456
+Merge: eb3d19b 386bebd
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 15:56:37 2019 -0800
+
+    Updating Test Branch to Final without Testing
+
+    Pull from Ron Branch
+
+commit 386bebd702f1b173f1c274d09616361c10ee82e9
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 14:17:42 2019 -0800
+
+    Added Names/Cheat notes to DungeonAdventure
+
+commit 36fb1e92da293be224b826e3756ca2411aa50850
+Merge: 1b70f38 c8da591
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 14:07:39 2019 -0800
+
+    Merge Ron and RonTest
+
+    Pulled Cleaning Branch into Ron
+
+commit c8da591c1b5eff2c5beba5cd3a636d0e7371eeda
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 14:05:44 2019 -0800
+
+    Added test runs of Maze
+
+    Regular run / Developer cheat run
+
+commit 18a220637e4a11d420932a44ab94ed7aeb54d96e
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 14:04:32 2019 -0800
+
+    Removed class files
+
+commit 766c09d2e03e8d78bc2ff20f1ebf13ec81f12787
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 14:02:28 2019 -0800
+
+    Cleaned up repository
+
+commit eb3d19b96d54f9dfec4e3c963a535db39cb4e502
+Merge: d87de21 1b70f38
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 13:20:56 2019 -0800
+
+    Update Test with Ron. All but testing complete.
+
+    Updating TestBranch with working Maze.
+
+commit 1b70f3808e8744292ac89c8494b47ec110c5a2ea
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 13:17:17 2019 -0800
+
+    Added Saving via Memento
+
+    Print dungeon when dying/winning.
+    Default save to MazeDungeon/save.txt
+
+commit 6a0208c3d59442f827ca39fa9a577fdbae9a11a1
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 10:54:30 2019 -0800
+
+    Added Custom Hero/Monster
+
+    Fixed Room printing.
+
+commit bebf917a1a28e706101f0dacd83cc44b264a0086
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Wed Dec 11 00:50:36 2019 -0800
+
+    Final touch on Attack. Refactor Maze stuff.
+
+    Finished all the base attacks. No new stuff yet.
+    Messed with a lot of internals for the maze stuff.
+    Set up interaction with items/monsters.
+
+commit bdc5d0af6279103b7a8cefe499b54f9c53bd74ac
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Tue Dec 10 14:56:18 2019 -0800
+
+    Second Upload of Attacks
+
+    All regular attacks set up.
+
+commit ba777048a9a76d4b60048df0017f0499cda3fdc4
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Tue Dec 10 11:41:08 2019 -0800
+
+    Updated with Attack Interface Basics
+
+    Sorcerer/Warrior implemented.
+    Maze commented out currently.
+
+commit 95f96d714f278d34f5b4909e4d1f32fbec7afbea
+Merge: 9aa5be5 54dbb1b
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Tue Dec 10 08:14:21 2019 -0800
+
+    Merge pull request #10 from RaikiriR/Justin
+
+    Pulling Maze into Ron branch.
+
+commit 54dbb1bd10dadca6d139437404a3036f6b01401a
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 14:13:48 2019 -0800
+
+    Fixed hero initialization bug
+
+commit cb27016ad17e7642b7e832e56d85a1494ee8b060
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 14:07:30 2019 -0800
+
+    Fixed stepping through to another room does not remove previous account of hero
+
+commit dba7a5206fa0b5461fd9b31f8a842551f250883b
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 12:39:10 2019 -0800
+
+    Maze Traverse method complete
+
+commit 634463779e375651ce76c490b3a3cd9bb02c2688
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 12:35:07 2019 -0800
+
+    Added step-into-room method
+
+commit 796568a40e9d6b7eec9c6f1271d3b049a82392fa
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 11:50:02 2019 -0800
+
+    Added movement capabilities
+
+commit cb0d1b15865ae5eabd31b911bdd17d93af7d27d8
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 03:13:56 2019 -0800
+
+    Menu in progress with maze
+
+commit 730c0b61445365cb01d6b90db2261124a15d79f8
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 02:20:40 2019 -0800
+
+    Added vision potion potential
+
+commit 7804d1d325f9e8cc61ebce8dd6775d9b870d5c6b
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 02:02:35 2019 -0800
+
+    Renaming items to respective characters
+
+commit c12c48eedc0fbbc6f0480c7c573f852e00a97bc2
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 01:48:48 2019 -0800
+
+    Renaming Maze to Room
+
+commit 8ecca34b7fc19021495c918e983761b66451bf7d
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Mon Dec 9 01:44:16 2019 -0800
+
+    Finished toString and print dungeon methods
+
+commit 83fdd9638ece508f32c4bc0e63be2c2e0a0aaf0f
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Sun Dec 8 23:26:19 2019 -0800
+
+    Finished maze skeleton
+
+commit 9b769b71b2721d94ca2e2dcd9a5f0b56d17b21b4
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Sun Dec 8 20:57:46 2019 -0800
+
+    Committing a merge for the Mazes
+
+commit b7d9d19bbf66858bdfd1d6336b1a60571f088833
+Merge: 04443ac 32a74a9
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Sun Dec 8 20:52:28 2019 -0800
+
+    Commiting merge
+
+commit 04443ac3ac43677b65e75c018f9229be732ddeaa
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Sun Dec 8 20:51:15 2019 -0800
+
+    ?
+
+commit 32a74a91650460d34d3d5642d470045c033d5cdc
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:41:47 2019 -0800
+
+    Updating .zip for upload
+
+commit 040023a9603745c87923aebf8551649dfa7a296f
+Merge: 28389ea 9aa5be5
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:36:18 2019 -0800
+
+    Merge pull request #9 from RaikiriR/Ron
+
+    Clean up
+
+commit 9aa5be592a3620865784e7dd855b11cacd428a79
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:32:49 2019 -0800
+
+    Cleaned up/Added Keyboard class
+
+commit 13a0e3233ee3327c582c5a4e9ccd14f2310ec8e1
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:31:16 2019 -0800
+
+    Updated Dungeon (Keyboard)
+
+commit 28389ea885ab73e4129d39dfe76d4e491c1ecd26
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:29:08 2019 -0800
+
+    Updated RefactorLog with 11th/Keyboard class
+
+commit af56614a601f8fd28769191dbb7c854c25267bb4
+Merge: fa3ebf2 0ffa83d
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:26:07 2019 -0800
+
+    Merge pull request #8 from RaikiriR/master
+
+    Updated Ron branch from master
+
+commit 0ffa83d847bb7bdd7577aeb32f1377388dc65a65
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:24:02 2019 -0800
+
+    Updated UML.io (package/Keyboard)
+
+commit ba5e3549819541a276e492e0491937f800f11ab9
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 16:23:32 2019 -0800
+
+    Updated UML (package/Keyboard)
+
+commit 7d920ad2d3b3b5606466fef4705bffb0022be24b
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:50:15 2019 -0800
+
+    Adding zip file
+
+commit e91faeea6f4535ad757f8a4c8b78f7ff784713af
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 14:43:42 2019 -0800
+
+    Updated UML.io
+
+commit 9e9e149bd2a2a56ae6ef4803052540e4ae02e2c3
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 14:43:00 2019 -0800
+
+    Update UML
+
+commit d87de214f977ea97998a8e6f1377441ce617d9fa
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 14:38:19 2019 -0800
+
+    Updated UML diagram
+
+commit b321963a7865d450e52245cd48d1328adb50b5a5
+Merge: bcb6ce9 a1c4066
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:37:53 2019 -0800
+
+    Testing
+
+commit bcb6ce9bf91482250e5b6f700ceaa83c94c5c423
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:36:25 2019 -0800
+
+    Changing method to camel case
+
+commit a1c4066869d14f3cc714bc5c8c4f219f633eba9c
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Fri Nov 22 14:32:57 2019 -0800
+
+    Update RefactorLog.txt
+
+commit 6cb552600997d5321c2c5beaa8a5e3a00061b43c
+Merge: cfa05dc 8cbc39e
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:27:01 2019 -0800
+
+    Merging final code into master
+
+commit 8cbc39e3c08dc5ffa224b5a83b12ddfa4e32a9c2
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Fri Nov 22 14:23:06 2019 -0800
+
+    Replaced old Dungeon_UML.drawio: UML here
+
+commit cfa05dc9265adf424cbe95ed4f0bf1b62022f11a
+Merge: 47c4735 8fcbae2
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:21:34 2019 -0800
+
+    Merge branch 'master' of https://github.com/RaikiriR/designpatterns
+
+commit 8fcbae222f508c2b3de157e190cb9011ba372712
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Fri Nov 22 14:21:15 2019 -0800
+
+    Replaced old Dungeon_UML.pdf
+
+commit 47c47359de62cf7e0b1b90031cf4029f37c5ad71
+Merge: f617d2a 40c09db
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:21:08 2019 -0800
+
+    Merging final file
+
+commit 40c09dbd95934c58e79f2342c42c5a029d43a170
+Author: Ching <jching@ewu.edu>
+Date:   Fri Nov 22 14:20:03 2019 -0800
+
+    Refactored choose method
+
+commit f617d2ad3bc6954c1eede13b93ca51887d125d37
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Fri Nov 22 14:03:19 2019 -0800
+
+    Added Dungeon_UML.drawio; Hopefully formatting fixed.
+
+commit 07934a7877840c17ad6029a36398a5419f659052
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Fri Nov 22 13:43:55 2019 -0800
+
+    Added Dungeon_UML.pdf
+
+commit fa3ebf2c15b40c11d85f14ed1f9cf136aa1132e4
+Merge: 3f885a6 c6a9cd5
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 13:08:03 2019 -0800
+
+    Merge pull request #7 from RaikiriR/TestBranch
+
+    Test branch merge to Ron branch
+
+commit c6a9cd5845f43179c738681ecc3b36fb44630c2d
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 12:00:11 2019 -0800
+
+    Code refactoring - dead code
+
+commit 7969335d63f42935b01250668364a8336d84b5d1
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 11:52:55 2019 -0800
+
+    Final clean version
+
+commit 52a8495f95f24f255d5167fa5fc7e4ff6137b8c9
+Merge: b905749 d5d7d26
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 11:49:51 2019 -0800
+
+    Fixing errors
+
+commit d5d7d2647a26146bc3c667f5cb5496df538b156c
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 11:48:49 2019 -0800
+
+    try 2
+
+commit fc39e7f4b8c28e26f3c13733803cfbb6ccd90779
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 11:40:48 2019 -0800
+
+    Finished exception handling
+
+commit b9057492515b4f639a43560f7f60f2524d56303f
+Merge: ff99061 82bc7fc
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 11:35:45 2019 -0800
+
+    Merge branch 'TestBranch' of https://github.com/RaikiriR/designpatterns into TestBranch
+
+commit ff99061e3c7ac9a677d74d2e276e7a7b7cfbb52a
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 11:35:35 2019 -0800
+
+    Finalized exception handling for all hero classes
+
+commit 82bc7fc892472709411feee97271ee563f950ebe
+Merge: 8a409f7 3f885a6
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 11:05:47 2019 -0800
+
+    Merge pull request #6 from RaikiriR/Ron
+
+    Update test branch, 9th Refactor and protected Hero Fields
+
+commit 8a409f7d1af932daa89abb65f4ab63b610923469
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 10:33:48 2019 -0800
+
+    Bug fix
+
+commit 7ffabf5d639d6e1907b376333c00178f3ee99d9e
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 10:27:24 2019 -0800
+
+    Rename
+
+commit 27f4ebf399f27a7f2d437504ba7fb1c6d9fc6016
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 10:23:12 2019 -0800
+
+    Choice validation fixed
+
+commit 613b87f4992068d141fafaaf5125e47d039351a2
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 09:29:58 2019 -0800
+
+    Adding readme
+
+commit 3f885a6dd0eb7e9f52f871e312b27bbb42db166e
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 09:24:33 2019 -0800
+
+    Update Hero Fields to Protected
+
+    Forgot to even make a privacy section for these. Whoops.
+
+commit 18f6acbc0507a4f3c0f05e2efd421cc0b470e975
+Merge: 0c1ac63 dcf28d7
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Fri Nov 22 09:21:39 2019 -0800
+
+    Merge pull request #5 from RaikiriR/Justin
+
+    Justin
+
+commit 7d9121501218433f03c1dbf8821356bcee49af28
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 09:20:41 2019 -0800
+
+    Added 9th Refactor - Private Fields
+
+commit 0c1ac6321ab212831469675d3c1620df3a59eee0
+Merge: 2399bb7 a897c9e
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Fri Nov 22 09:17:36 2019 -0800
+
+    Merge pull request #4 from RaikiriR/Ron
+
+    New RefactorLog and Updated with src/dungeon Package
+
+commit a897c9e6fdca3f6c8a82d14dc02a26391881191b
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Fri Nov 22 08:58:22 2019 -0800
+
+    Renamed/Updated ReadMe.md
+
+    Renamed to RefactorLog.txt
+    Updated with 8 Refactors with Reasoning and Example Code
+
+commit dcf28d7fcad1879cfbb887507eb453f48f6ac023
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Fri Nov 22 00:33:40 2019 -0800
+
+    Finished battle menu exception handling
+
+commit 8c10adc7c265d4cfa2375f656685b07fd775310f
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 23:29:36 2019 -0800
+
+    Added kb flush, fixed error where entering a string counted as a choice and name
+
+commit b0626d18659efaa652925968027fa3c5efb0ceaf
+Merge: 922a2b4 7a6e740
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 23:21:10 2019 -0800
+
+    Changing HeroFactory
+
+commit 7a6e74026b955f9a5e4950e6f854a0d87a8fd96b
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 23:19:53 2019 -0800
+
+    Changing back HeroFactory
+
+commit 1da571e6aa9c1da3145bd121597a19521d1eda43
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 22:33:30 2019 -0800
+
+    Added exception handling in hero factory
+
+commit 922a2b484385a9523330a97fbcb0e02dc3e589b8
+Merge: 0ca4cdf 559951d
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:57:55 2019 -0800
+
+    Merging with Justin
+
+commit 559951d0134366dc24b37f55059599cc93cb54b2
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:53:09 2019 -0800
+
+    Removed extra files
+
+commit 0ca4cdfe962e79bd5cb26c8c5e1757095d442199
+Merge: 1296654 4e1fb4c
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:49:37 2019 -0800
+
+    Merging branch Justin with the Test Branch
+
+commit 4e1fb4c4ac9c7201cb310168fbc5bbddf2510f7f
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:48:09 2019 -0800
+
+    Adding 5 changes to ReadME
+
+commit 6cf836bf54f049b4d7e249beefb22ffe04d626e4
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:45:46 2019 -0800
+
+    Changing location of ReadME
+
+commit de2f24b92579fa628919b317b33bd4c9e94dc4f9
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:41:08 2019 -0800
+
+    Moved files to a dungeon package
+
+commit 88a9352829ee170929554525cc496bed0e10c337
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:37:58 2019 -0800
+
+    Refreshing
+
+commit 1c9d87cb29e65f9ccfbbaa89685c40fa36f2d338
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:31:08 2019 -0800
+
+    Reverting
+
+commit a2c2f31185ae3e24445c7ae9d17d347387a13944
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:16:10 2019 -0800
+
+    Reloading
+
+commit d264851d734b57d338bab5cd82ee2998fa0ea47a
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 17:03:34 2019 -0800
+
+    Testing first refactor
+
+commit 12966540b06d58c3e3d689aa96fb1d527e243367
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 14:36:00 2019 -0800
+
+    Test 2
+
+commit 7ce24d621f5216b1bc85580799fadcf1bd5298f3
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:32:58 2019 -0800
+
+    Update README.md
+
+commit 246915f93129c7dcb80c2969c889cef2cd25b464
+Merge: 24daf3b c8cc0a5
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:30:19 2019 -0800
+
+    Update README.md
+
+commit c8cc0a57ddac1649d47a877e27a9720856e14c18
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:27:19 2019 -0800
+
+    Update README.md
+
+commit 24daf3b82d12d8ea95ee50c031b04014e9c20b3e
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 14:22:40 2019 -0800
+
+    Add at rons
+
+commit b7a26df350875538245dd0e922fa510689efd858
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 14:09:07 2019 -0800
+
+    Testing Coopers
+
+commit 2399bb772943aa99b1446deddba41eee82c56b47
+Merge: db90c4f 4c5de46
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Thu Nov 21 14:04:14 2019 -0800
+
+    Merge pull request #3 from RaikiriR/TestBranch
+
+    testig branch
+
+commit 4c5de464ae896886c6425d21d4896ca781ece44a
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 13:57:09 2019 -0800
+
+    testig branch
+
+commit db90c4fb0987856aa58108ed0ee0e245b78a26c1
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 13:40:00 2019 -0800
+
+    Test
+
+commit 3ea870f37d2ee001f2d6e29eaf024740beebcc22
+Merge: 6959e93 16e6284
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Thu Nov 21 13:20:06 2019 -0800
+
+    Merge pull request #1 from RaikiriR/Yhargrim-InitialUpload
+
+    Add files via upload
+
+commit 16e6284405da8c8f52b576c126b1070a09886f9f
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Thu Nov 21 13:18:26 2019 -0800
+
+    Add files via upload
+
+    First upload of the newly refactored Dungeon
+
+commit 6959e931a7888f5b18766912a5227caac27008f4
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Thu Nov 21 13:13:46 2019 -0800
+
+    Initial commit
+(END)
+
+    Update README.md
+
+commit 246915f93129c7dcb80c2969c889cef2cd25b464
+Merge: 24daf3b c8cc0a5
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:30:19 2019 -0800
+
+    Update README.md
+
+commit c8cc0a57ddac1649d47a877e27a9720856e14c18
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:27:19 2019 -0800
+
+    Update README.md
+
+commit 24daf3b82d12d8ea95ee50c031b04014e9c20b3e
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 14:22:40 2019 -0800
+
+    Add at rons
+
+commit b7a26df350875538245dd0e922fa510689efd858
+:
+
+    Update README.md
+
+commit 246915f93129c7dcb80c2969c889cef2cd25b464
+Merge: 24daf3b c8cc0a5
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:30:19 2019 -0800
+
+    Update README.md
+
+commit c8cc0a57ddac1649d47a877e27a9720856e14c18
+Author: Cooperwutzke <36475473+Cooperwutzke@users.noreply.github.com>
+Date:   Thu Nov 21 14:27:19 2019 -0800
+
+    Update README.md
+
+commit 24daf3b82d12d8ea95ee50c031b04014e9c20b3e
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 14:22:40 2019 -0800
+
+    Add at rons
+
+commit b7a26df350875538245dd0e922fa510689efd858
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 14:09:07 2019 -0800
+
+    Testing Coopers
+
+commit 2399bb772943aa99b1446deddba41eee82c56b47
+Merge: db90c4f 4c5de46
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Thu Nov 21 14:04:14 2019 -0800
+
+    Merge pull request #3 from RaikiriR/TestBranch
+
+    testig branch
+
+commit 4c5de464ae896886c6425d21d4896ca781ece44a
+Author: Ching <jching@ewu.edu>
+Date:   Thu Nov 21 13:57:09 2019 -0800
+
+    testig branch
+
+commit db90c4fb0987856aa58108ed0ee0e245b78a26c1
+Author: Justin Ching <justintkmching@gmail.com>
+Date:   Thu Nov 21 13:40:00 2019 -0800
+
+    Test
+
+commit 3ea870f37d2ee001f2d6e29eaf024740beebcc22
+Merge: 6959e93 16e6284
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Thu Nov 21 13:20:06 2019 -0800
+
+    Merge pull request #1 from RaikiriR/Yhargrim-InitialUpload
+
+    Add files via upload
+
+commit 16e6284405da8c8f52b576c126b1070a09886f9f
+Author: Yhargrim <58047675+Yhargrim@users.noreply.github.com>
+Date:   Thu Nov 21 13:18:26 2019 -0800
+
+    Add files via upload
+
+    First upload of the newly refactored Dungeon
+
+commit 6959e931a7888f5b18766912a5227caac27008f4
+Author: RaikiriR <52725969+RaikiriR@users.noreply.github.com>
+Date:   Thu Nov 21 13:13:46 2019 -0800
+
+    Initial commit
