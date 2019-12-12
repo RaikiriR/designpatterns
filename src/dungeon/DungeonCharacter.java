@@ -1,32 +1,20 @@
 package dungeon;
 
+import java.io.Serializable;
 import java.util.Scanner;
 
-public abstract class DungeonCharacter {
+public abstract class DungeonCharacter implements Serializable {
+	
 	protected String name;
 	protected int health;
 	private int speed;
-	private int damageMin, damageMax;
-	private double hitChance;
-	private int[] loc;
+	protected Attack attack;
 	
-	public DungeonCharacter(String name, int health, int speed, int damageMin, int damageMax, double hitChance) {
+	public DungeonCharacter(String name, int health, int speed, String attack, AttackFactory attackFactory) {
 		this.name = name;
 		this.health = health;
 		this.speed = speed;
-		this.damageMin = damageMin;
-		this.damageMax = damageMax;
-		this.hitChance = hitChance;
-	}
-	
-	public void attack(DungeonCharacter opponent) {
-		if (Math.random() <= hitChance) {
-			int damageAmount = (int)(Math.random() * (damageMax - damageMin + 1)) + damageMin ;
-			opponent.damage(damageAmount);
-		} else {
-			System.out.println(name + "'s attack on " + opponent.getName() + " failed!");
-			System.out.println();
-		}
+		this.attack = attackFactory.getAttack(attack);
 	}
 	
 	public void heal(int healAmount) {
@@ -80,29 +68,6 @@ public abstract class DungeonCharacter {
 		return speed;
 	}
 
-	public void setLoc(int row, int col) {
-        int[] updateloc = new int[2];
-        updateloc[0] = row;
-        updateloc[1] = col;
-        loc = updateloc;
-    }
-	
-	public int[] getLoc()
-	{
-		return loc;
-	}
-	
-	public void pingloc()
-	{
-		System.out.print("[");
-		System.out.print(loc[0]);
-		System.out.print("]");
-		System.out.print("-");
-		System.out.print("[");
-		System.out.print(loc[1]);
-		System.out.println("]");
-	}
-	
-	protected void battleChoices(DungeonCharacter monster, Scanner kb) {}
+	protected void battleChoices(DungeonCharacter opponent, Scanner kb) {}
 	
 }

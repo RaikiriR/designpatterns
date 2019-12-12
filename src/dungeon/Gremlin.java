@@ -2,13 +2,12 @@ package dungeon;
 
 public class Gremlin extends Monster {
 
-	 public Gremlin() {
-			super("Gnarltooth the Gremlin", 70, 5, 15, 30, .8, .4, 20, 40);
+	 public Gremlin(AttackFactory attackFactory) {
+			super("Gnarltooth the Gremlin", 70, 5, "Kris", .4, 20, 40, attackFactory);
 	    }
 
 		public void attack(DungeonCharacter opponent) {
-			System.out.println(name + " jabs his kris at " + opponent.getName() + ":");
-			super.attack(opponent);
+			super.attack.attack(this, opponent);
 		}
 		
 }

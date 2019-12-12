@@ -1,0 +1,931 @@
+Choose a hero: 
+1. Warrior 
+2. Sorceress 
+3. Thief 
+4. Knight 
+5. Wizard
+1
+Enter character name: Grog
+
+Welcome challenger Grog to my labyrinth.
+In order to escape you must traverse through my maze.
+But there is a trick!
+The only way to open the exit is by first collecting the 4 Pillars of OO hidden throughout the maze.
+However, the road will not be easy.
+There are terrible monsters and fiendish traps, but also items to help you along the way.
+Here is a quick rundown of the different items that can appear in any room.
+M - Multiple Items
+P - Pit
+I - Entrance (In)
+O - Exit (Out)
+V - Vision Potion
+H - Healing Potion
+E - Empty Room
+X - Monster
+Enter anything to continue...
+a
+
+Thunder crashes!!
+
+***
+*I|
+*-*
+
+Grog has 125 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+***
+|M|
+*-*
+Sargath the Skeleton has been encountered. Prepare for battle!
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Sargath the Skeleton.
+Grog's attack on Sargath the Skeleton failed!
+
+Sargath the Skeleton slices a rusty blade at Grog.
+Sargath the Skeleton's attack on Grog failed!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Sargath the Skeleton
+Grog's attack on Sargath the Skeleton failed!
+
+Sargath the Skeleton slices a rusty blade at Grog.
+Sargath the Skeleton's attack on Grog failed!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Sargath the Skeleton.
+Sargath the Skeleton hit for <57> points of damage.
+Sargath the Skeleton now has 43 hit points remaining.
+
+Sargath the Skeleton slices a rusty blade at Grog.
+Grog hit for <42> points of damage.
+Grog now has 83 hit points remaining.
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Sargath the Skeleton
+Sargath the Skeleton hit for <172> points of damage.
+Sargath the Skeleton now has 0 hit points remaining.
+
+Sargath the Skeleton has been killed.
+Grog was victorious!
+Vision potion obtained!
+
+Grog has 83 HP, 0 healing potion(s), 1 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y|
+*-*
+
+Grog has 83 HP, 0 healing potion(s), 1 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+2
+1. Use Healing Potion
+2. Use Vision Potion
+2
+*********
+*I||E||M|
+*-**-**-*
+*-**-**-*
+*E||Y||M|
+*-**-**-*
+*-**-**-*
+*X||E||M|
+*-**-**-*
+
+Grog has 83 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+4
+
+Grog has 83 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|M|
+*-*
+Gnarltooth the Gremlin has been encountered. Prepare for battle!
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Gnarltooth the Gremlin
+Grog's attack on Gnarltooth the Gremlin failed!
+
+Gnarltooth the Gremlin stabs a kris at Grog.
+Grog BLOCKED the attack!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Gnarltooth the Gremlin.
+Gnarltooth the Gremlin hit for <57> points of damage.
+Gnarltooth the Gremlin now has 13 hit points remaining.
+
+Gnarltooth the Gremlin stabs a kris at Grog.
+Gnarltooth the Gremlin's attack on Grog failed!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Gnarltooth the Gremlin.
+Gnarltooth the Gremlin hit for <58> points of damage.
+Gnarltooth the Gremlin now has 0 hit points remaining.
+
+Gnarltooth the Gremlin has been killed.
+Grog was victorious!
+Congratulations! You have found a pillar of OO.
+
+Grog has 83 HP, 0 healing potion(s), 0 vision potion(s), and 1 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|M|
+*-*
+Acererak the Lich has been encountered. Prepare for battle!
+Number of turns this round is: 4
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Acererak the Lich
+Acererak the Lich hit for <112> points of damage.
+Acererak the Lich now has 0 hit points remaining.
+
+Acererak the Lich has been killed.
+Number of turns remaining is: 3
+Grog was victorious!
+You have fallen in a pit and taken damage!
+Grog hit for <12> points of damage.
+Grog now has 71 hit points remaining.
+
+Vision potion obtained!
+
+Grog has 71 HP, 0 healing potion(s), 1 vision potion(s), and 1 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y|
+*-*
+
+Grog has 71 HP, 0 healing potion(s), 1 vision potion(s), and 1 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+2
+1. Use Healing Potion
+2. Use Vision Potion
+2
+*-**-**-*
+|E||E||E|
+*-**-**-*
+*-**-**-*
+|T||Y||P|
+*-**-**-*
+*-**-**-*
+|E||X||M|
+*********
+
+Grog has 71 HP, 0 healing potion(s), 0 vision potion(s), and 1 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+*-*
+|T|
+*-*
+Congratulations! You have found a pillar of OO.
+
+Grog has 71 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y|
+***
+
+Grog has 71 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+The door is actually a wall!
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+*-*
+*M|
+***
+You have fallen in a pit and taken damage!
+Grog hit for <9> points of damage.
+Grog now has 62 hit points remaining.
+
+Healing potion obtained!
+
+Grog has 62 HP, 1 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+2
+1. Use Healing Potion
+2. Use Vision Potion
+1
+Grog healed for [15] points.
+Total hit points remaining are: 77
+
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+The door is actually a wall!
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+*-*
+*Y|
+*-*
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+*Y|
+***
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|Y|
+***
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|X|
+***
+Skrawk the Harpy has been encountered. Prepare for battle!
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Skrawk the Harpy.
+Skrawk the Harpy hit for <41> points of damage.
+Skrawk the Harpy now has 9 hit points remaining.
+
+Skrawk the Harpy healed for [19] points.
+Total hit points remaining are: 28
+
+Skrawk the Harpy slashes with natural talons at Grog.
+Skrawk the Harpy's attack on Grog failed!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Skrawk the Harpy.
+Grog's attack on Skrawk the Harpy failed!
+
+Skrawk the Harpy slashes with natural talons at Grog.
+Grog BLOCKED the attack!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Skrawk the Harpy.
+Skrawk the Harpy hit for <44> points of damage.
+Skrawk the Harpy now has 0 hit points remaining.
+
+Skrawk the Harpy has been killed.
+Grog was victorious!
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|M|
+***
+Congratulations! You have found a pillar of OO.
+You have fallen in a pit and taken damage!
+Grog hit for <13> points of damage.
+Grog now has 64 hit points remaining.
+
+
+Grog has 64 HP, 0 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|O*
+***
+This is the exit
+ Do you have all the pillars needed?
+
+Grog has 64 HP, 0 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+*-*
+|Y*
+*-*
+
+Grog has 64 HP, 0 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+*-*
+|M*
+*-*
+Acererak the Lich has been encountered. Prepare for battle!
+Number of turns this round is: 4
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Acererak the Lich
+Grog's attack on Acererak the Lich failed!
+
+Number of turns remaining is: 3
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Acererak the Lich
+Grog's attack on Acererak the Lich failed!
+
+Number of turns remaining is: 2
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Acererak the Lich
+Grog's attack on Acererak the Lich failed!
+
+Number of turns remaining is: 1
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Acererak the Lich
+Grog's attack on Acererak the Lich failed!
+
+Acererak the Lich launches lightning towards Grog.
+Grog BLOCKED the attack!
+
+Number of turns this round is: 4
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 2
+
+Grog swings a mighty, crushing blow at Acererak the Lich
+Acererak the Lich hit for <92> points of damage.
+Acererak the Lich now has 8 hit points remaining.
+
+Acererak the Lich healed for [29] points.
+Total hit points remaining are: 37
+
+Number of turns remaining is: 3
+1. Attack Opponent
+2. Crushing Blow
+Choose an option: 1
+
+Grog swings a mighty sword at Acererak the Lich.
+Acererak the Lich hit for <53> points of damage.
+Acererak the Lich now has 0 hit points remaining.
+
+Acererak the Lich has been killed.
+Number of turns remaining is: 2
+Grog was victorious!
+Healing potion obtained!
+
+Grog has 64 HP, 1 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+2
+1. Use Healing Potion
+2. Use Vision Potion
+1
+Grog healed for [7] points.
+Total hit points remaining are: 71
+
+
+Grog has 71 HP, 0 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+*-*
+|Y*
+*-*
+
+Grog has 71 HP, 0 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+***
+|H*
+*-*
+Healing potion obtained!
+
+Grog has 71 HP, 1 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+2
+1. Use Healing Potion
+2. Use Vision Potion
+1
+Grog healed for [6] points.
+Total hit points remaining are: 77
+
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+The door is actually a wall!
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+***
+|T|
+*-*
+Congratulations! You have found a pillar of OO.
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 4 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+***
+|Y*
+*-*
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 4 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y*
+*-*
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 4 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y*
+*-*
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 4 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y*
+*-*
+
+Grog has 77 HP, 0 healing potion(s), 0 vision potion(s), and 4 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|O*
+***
+This is the exit
+ Do you have all the pillars needed?
+You've escaped the maze!
+
+***************
+*I||E||M||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||E||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||E||O*
+***************
+
+Play again (y/n)?
+y
+Choose a hero: 
+1. Warrior 
+2. Sorceress 
+3. Thief 
+4. Knight 
+5. Wizard
+4
+Enter character name: Grimlock
+
+Welcome challenger Grimlock to my labyrinth.
+In order to escape you must traverse through my maze.
+But there is a trick!
+The only way to open the exit is by first collecting the 4 Pillars of OO hidden throughout the maze.
+However, the road will not be easy.
+There are terrible monsters and fiendish traps, but also items to help you along the way.
+Here is a quick rundown of the different items that can appear in any room.
+M - Multiple Items
+P - Pit
+I - Entrance (In)
+O - Exit (Out)
+V - Vision Potion
+H - Healing Potion
+E - Empty Room
+X - Monster
+Enter anything to continue...
+a
+
+Thunder crashes!!
+
+***
+*I|
+*-*
+
+Grimlock has 150 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+***
+|Y|
+*-*
+
+Grimlock has 150 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|V|
+*-*
+Vision potion obtained!
+
+Grimlock has 150 HP, 0 healing potion(s), 1 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+2
+1. Use Healing Potion
+2. Use Vision Potion
+2
+*********
+*I||E||E|
+*-**-**-*
+*-**-**-*
+*P||Y||T|
+*-**-**-*
+*-**-**-*
+*M||E||E|
+*-**-**-*
+
+Grimlock has 150 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+5
+*-*
+|Y|
+*-*
+
+Grog has 83 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+3
+Exiting...

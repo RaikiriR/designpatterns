@@ -1,271 +1,153 @@
 package dungeon;
 
-import java.util.Random;
+import java.io.Serializable;
 
-public class Room {
+public class Room implements Serializable {
 
-	private String item;
-	private int itemcount = 0;
-	private int row;
-	private int col;
+	private static final long serialVersionUID = 4L;
+	private String item = "";
+	private int itemcount;
+	private int[] loc = new int[2];
 	private boolean filled;
-	public Room(int row, int col) 
-	{
-
-		setRow(row);
-		setCol(col);
-		setItem();
+	private boolean nDoor = true, sDoor = true, eDoor = true, wDoor = true;
+	
+	public Room(int row, int col) {
+		loc[0] = row;
+		loc[1] = col;
+		setDoors();
+		setItems();
+		setPillars();
 	}
 	
-	private void setItem() 
-	{
-			int type = rollItem(0,99);
-			String spawned = spawnItem(type);
-			updateItem(spawned);
-	}
-
-	private void setCol(int setcol) 
-	{
-		this.col = setcol;
-		
-	}
-
-	public void pingloc()
-	{
-		System.out.print("Pinging --- ");
-		System.out.print(row);
-		System.out.print(" - ");
-		System.out.print(col);
-		System.out.print("  ");
+	private void setDoors() {
+		if(loc[0] == 0)
+			nDoor = false;
+		if(loc[0] == 4)
+			sDoor = false;
+		if(loc[1] == 0)
+			wDoor = false;
+		if(loc[1] == 4)
+			eDoor = false;
 	}
 	
-	private void setRow(int setrow) 
-	{
-		this.row = setrow;
-		
-	}
-	
-	private String spawnItem(int type)
-	{
-		if(type < 20)
-		{
-			return "H";
+	private void setItems() {
+		if (!nDoor && !wDoor) {
+			this.item = "I";
+			this.itemcount++;
+			return;
 		}
-		if(type > 20 && type < 40)
-		{
-			return "X";
+		if (!sDoor && !eDoor) {
+			this.item = "O";
+			this.itemcount++;
+			return;
 		}
-		if(type > 40 && type < 50)
-		{
-			return "V";
+		if (((int)(Math.random() * 100) + 1) < 11) {
+			this.item += "H";
+			this.itemcount++;
 		}
-		if(type > 40 && type < 50)
-		{
-			return "V";
+		if (((int)(Math.random() * 100) + 1) < 11) {
+			this.item += "V";
+			this.itemcount++;
 		}
-		return null;
+		if (((int)(Math.random() * 100) + 1) < 11) {
+			this.item += "P";
+			this.itemcount++;
+		}
+		if (((int)(Math.random() * 100) + 1) < 26) {
+			this.item += "X";
+			this.itemcount++;
+		}
 	}
 	
-	private int rollItem(int min,int max)
-	{
-		int ans = randomRoller(min,max);
-		return ans;
+	private void setPillars() {
+		if(loc[0] == 0 && loc[1] == 3) {
+			this.item += "T";
+			this.itemcount++;
+		}
+		if(loc[0] == 3 && loc[1] == 1) {
+			this.item += "T";
+			this.itemcount++;
+		}
+		if(loc[0] == 4 && loc[1] == 3) {
+			this.item += "T";
+			this.itemcount++;
+		}
+		if(loc[0] == 1 && loc[1] == 2) {
+			this.item += "T";
+			this.itemcount++;
+		}
 	}
 	
-
-	public int randomRoller(int min, int max)
-	{
-		Random rand = new Random();
-		int randomNum = rand.nextInt((max - min)+1) + min;
-		return randomNum;
+	public void spawnHero() {
+		this.item += "Y";
+		this.itemcount++;
 	}
-
-	public boolean getFill()
-	{
+	
+	public boolean getFill() {
 		return filled;
 	}
-	public String getItem()
-	{
-		if(this.item == null)
-		{
+	
+	public String getItem() {
+		if(this.item == null || this.item.isEmpty())
 			return "E";
-		}
-		else
-		{
-			return this.item;
-		}
-	}
-	
-	public void spawnInstance(String instance)
-	{
-		if(instance.contains("Exit"))
-		{
-			updateItem("O");
-		}
-		if(instance.contains("Pillar"))
-		{
-			updateItem("T");
-		}
-		if(instance.contains("Hero"))
-		{
-			updateItem("Y");
-		}
-		if(instance.contains("Enter"))
-		{
-			updateItem("I");
-		}
+		return this.item;
 	}
 
-	private void updateItem(String newitem)
-	{
-	    if(this.col == 0 && this.row == 0)
-	    {
-	    	if(newitem != null)
-	    	{
-		    	if(newitem.contains("I"))
-		    	{
-		    		this.item = newitem;
-		    	}
-	    	}
-	    }
-	    else if(this.col == 4 && this.row == 4)
-	    {
-	    	if(newitem != null)
-	    	{
-		    	if(newitem.contains("O"))
-		    	{
-		    		this.item = newitem;
-		    	}
-	    	}
-	    }
-	    else if(this.col == 0 && this.row == 1)
-	    {
-	    	if(newitem != null)
-	    	{
-		    	if(newitem.contains("Y"))
-		    	{
-		    		this.item = "Y";
-		    		this.itemcount++;
-		    	}
-	    	}
-	    }
-	    else if(newitem == null)
-	    {
-	    	
-	    }
-		else if(this.item == null)
-		{
-			this.item = newitem;
-			this.filled = true;;
-			this.itemcount++;
-		}
-		else if(itemcount < 3)
-		{
-			this.item = this.item + newitem;
-			this.filled = true;
-			this.itemcount++;
-		}
-	}
-	
-	public String toString()
-    {
+	public String toString() {
 		String fill = "";
-		if(this.item == null)
-		{
+		if(this.item == null || this.item.isEmpty())
 			fill = "E";
-		}
+		else if (this.itemcount == 2 && this.item.indexOf("Y") != -1)
+			fill = this.item.substring(0, 1);
 		else if (this.itemcount >= 2)
-		{
 			fill = "M";
-		}
 		else if(this.itemcount == 1)
-		{
 			fill = this.item;
-		}
 
-		
-		//edges
-		if(row==0)
-		{
-			if(col==0)
-			{
-				return "***" + "@*" + "I" + "|@" + "*-*";
-			}
-			else if(col==4)
-			{
-				return "***" + "@|" + fill + "*@" + "*-*";
-
-			}
-			else if((col>0 || col<4))
-			{
-				return "***" + "@|" + fill + "|@" + "*-*";
-			}
-			
-		}
-		
-		//edges
-		else if(row==4)
-		{
-			if(col==0)
-			{
-				return "*-*" + "@*" + fill + "|@" + "***";
-
-			}
-			
-			if(col==4)
-			{
-				return "*-*" + "@|" + "O" +"*@" + "***";
-			}
-			else if((col>0 || col<4))
-			{
-				return "*-*" + "@|" + fill + "|@" + "***";
-
-			}
-		}
-		
-		//edges 
-		else if(col == 0)
-		{
-			if((row>0 || row<4))
-			{
-				return "*-*" + "@*" + fill + "|@" + "*-*";
-				
-			}
-		}
-		
-		//edges
-		else if(col == 4)
-		{
-			if((row>0 || row<4))
-			{
-				return "*-*" + "@|" + fill + "*@" + "*-*";
-			}
-		}
-		
-		//middle
-		else if((row>0 || row<4) && (col>0 || col<4))
-		{
-			return "*-*" + "@|" + fill + "|@" + "*-*";
-
-		}
-
-    	return "";
+		String room = "";
+		if (nDoor)
+			room += "*-*\n";
+		else
+			room += "***\n";
+		if(wDoor)
+			room += "|" + fill;
+		else
+			room += "*" + fill;
+		if(eDoor)
+			room += "|\n";
+		else
+			room += "*\n";
+		if(sDoor)
+			room += "*-*";
+		else
+			room += "***";
+		return room;
     }
 	
-	public void removeItem()
-	{
-		if(this.item != null)
-		{
-			this.item = this.item.substring(1);
-			this.itemcount = this.itemcount -1;
-		}
-		if(this.item != null)
-		{
-			if(this.item.contentEquals(""))
-			{
-				this.item = null;
+	public void removeItem(String type) {
+		if(this.item != null) {
+			if(itemcount == 0) { 
+			}
+			else if(itemcount == 1 && this.item.equals(type)) {
+				this.item = "";
+				this.itemcount--;
+				return;
+			} else if(itemcount > 1) {
+				if(item.indexOf(type) == 0) {
+					this.item = item.substring(1);
+					this.itemcount--;
+				} else {
+					this.item = stripElement(this.item, 0, this.item.indexOf(type), this.item.length() - 1);
+					this.itemcount--;
+				}
+					
 			}
 		}
-		
+	}
+	
+	private String stripElement(String string, int start, int gap, int end) {
+		String firstHalf = string.substring(start, gap);
+		String secondHalf = string.substring(gap+1, end+1);
+		return firstHalf + secondHalf;
 	}
 }
