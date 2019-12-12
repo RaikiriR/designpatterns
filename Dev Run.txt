@@ -1,0 +1,727 @@
+Choose a hero: 
+1. Warrior 
+2. Sorceress 
+3. Thief 
+4. Knight 
+5. Wizard
+3
+Enter character name: Garrick
+
+Welcome challenger Garrick to my labyrinth.
+In order to escape you must traverse through my maze.
+But there is a trick!
+The only way to open the exit is by first collecting the 4 Pillars of OO hidden throughout the maze.
+However, the road will not be easy.
+There are terrible monsters and fiendish traps, but also items to help you along the way.
+Here is a quick rundown of the different items that can appear in any room.
+M - Multiple Items
+P - Pit
+I - Entrance (In)
+O - Exit (Out)
+V - Vision Potion
+H - Healing Potion
+E - Empty Room
+X - Monster
+Enter anything to continue...
+dev1
+
+Thunder crashes!!
+
+***************
+*I||X||E||M||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*H||M||T||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 75 HP, 0 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+*H|
+*-*
+Healing potion obtained!
+***************
+*I||X||E||M||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*Y||M||T||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 75 HP, 1 healing potion(s), 0 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|M|
+*-*
+Skrawk the Harpy has been encountered. Prepare for battle!
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Skrawk the Harpy.
+Skrawk the Harpy hit for <31> points of damage.
+Skrawk the Harpy now has 19 hit points remaining.
+
+Skrawk the Harpy slashes with natural talons at Garrick.
+Garrick hit for <17> points of damage.
+Garrick now has 58 hit points remaining.
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Skrawk the Harpy.
+Garrick's attack on Skrawk the Harpy failed!
+
+Skrawk the Harpy slashes with natural talons at Garrick.
+Garrick BLOCKED the attack!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 2
+
+Surprise attack was successful!
+Garrick gets an additional turn.
+
+Garrick throws a dagger at Skrawk the Harpy.
+Skrawk the Harpy hit for <27> points of damage.
+Skrawk the Harpy now has 0 hit points remaining.
+
+Skrawk the Harpy has been killed.
+Number of turns remaining is: 1
+Garrick was victorious!
+Vision potion obtained!
+***************
+*I||X||E||M||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||Y||T||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 0 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|T|
+*-*
+Congratulations! You have found a pillar of OO.
+***************
+*I||X||E||M||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||Y||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 1 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+1
+***
+|Y|
+*-*
+***************
+*I||X||Y||M||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 1 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+***
+|M|
+*-*
+Skrawk the Harpy has been encountered. Prepare for battle!
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 2
+
+Surprise attack was successful!
+Garrick gets an additional turn.
+
+Garrick throws a dagger at Skrawk the Harpy.
+Garrick's attack on Skrawk the Harpy failed!
+
+Number of turns remaining is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Skrawk the Harpy.
+Skrawk the Harpy hit for <36> points of damage.
+Skrawk the Harpy now has 14 hit points remaining.
+
+Skrawk the Harpy slashes with natural talons at Garrick.
+Garrick BLOCKED the attack!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Skrawk the Harpy.
+Skrawk the Harpy hit for <32> points of damage.
+Skrawk the Harpy now has 0 hit points remaining.
+
+Skrawk the Harpy has been killed.
+Garrick was victorious!
+Congratulations! You have found a pillar of OO.
+***************
+*I||X||E||Y||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+***
+|Y*
+*-*
+***************
+*I||X||E||E||Y*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y*
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||Y*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y*
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||Y*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|Y*
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||E||Y*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+*-*
+|Y|
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||E||Y||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+*-*
+|Y|
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||M||Y||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 58 HP, 1 healing potion(s), 1 vision potion(s), and 2 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+3
+*-*
+|M|
+*-*
+Gnarltooth the Gremlin has been encountered. Prepare for battle!
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Gnarltooth the Gremlin.
+Gnarltooth the Gremlin hit for <21> points of damage.
+Gnarltooth the Gremlin now has 49 hit points remaining.
+
+Gnarltooth the Gremlin stabs a kris at Garrick.
+Garrick BLOCKED the attack!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Gnarltooth the Gremlin.
+Garrick's attack on Gnarltooth the Gremlin failed!
+
+Gnarltooth the Gremlin stabs a kris at Garrick.
+Garrick BLOCKED the attack!
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 2
+
+Surprise attack failed.
+Garrick throws a dagger at Gnarltooth the Gremlin.
+Gnarltooth the Gremlin hit for <21> points of damage.
+Gnarltooth the Gremlin now has 28 hit points remaining.
+
+Gnarltooth the Gremlin healed for [21] points.
+Total hit points remaining are: 49
+
+Gnarltooth the Gremlin stabs a kris at Garrick.
+Garrick hit for <23> points of damage.
+Garrick now has 35 hit points remaining.
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Gnarltooth the Gremlin.
+Gnarltooth the Gremlin hit for <37> points of damage.
+Gnarltooth the Gremlin now has 12 hit points remaining.
+
+Gnarltooth the Gremlin stabs a kris at Garrick.
+Garrick hit for <30> points of damage.
+Garrick now has 5 hit points remaining.
+
+Number of turns this round is: 1
+1. Attack Opponent
+2. Sneak Attack
+Choose an option: 1
+
+Garrick throws a dagger at Gnarltooth the Gremlin.
+Gnarltooth the Gremlin hit for <27> points of damage.
+Gnarltooth the Gremlin now has 0 hit points remaining.
+
+Gnarltooth the Gremlin has been killed.
+Garrick was victorious!
+Congratulations! You have found a pillar of OO.
+Healing potion obtained!
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||Y||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 5 HP, 2 healing potion(s), 1 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|Y|
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||E||Y||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 5 HP, 2 healing potion(s), 1 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|Y|
+*-*
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||E||E||Y||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||T||O*
+***************
+
+Garrick has 5 HP, 2 healing potion(s), 1 vision potion(s), and 3 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+2
+*-*
+|T|
+***
+Congratulations! You have found a pillar of OO.
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||E||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||Y||O*
+***************
+
+Garrick has 5 HP, 2 healing potion(s), 1 vision potion(s), and 4 pillar(s) of OO.
+What do you choose to do hero?
+1. Move Room
+2. Use Item
+3. Give up
+4. Save Game
+5. Load Game
+1
+What door do you want to try to enter?
+1. N
+2. S
+3. W
+4. E
+4
+*-*
+|O*
+***
+This is the exit
+ Do you have all the pillars needed?
+You've escaped the maze!
+
+***************
+*I||X||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||E||X||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*X||X||E||P||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*P||E||E||E||E*
+*-**-**-**-**-*
+*-**-**-**-**-*
+*E||E||P||E||O*
+***************
+
+Play again (y/n)?
+n
+Exiting...
